@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 function ArrowIcon() {
@@ -30,14 +31,6 @@ function MailIcon() {
   );
 }
 
-function SparkleIcon() {
-  return (
-    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-    </svg>
-  );
-}
-
 export default function Home() {
   return (
     <div className="relative min-h-screen">
@@ -49,7 +42,7 @@ export default function Home() {
       <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-gray-950/60 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           <Link href="/" className="text-lg font-bold tracking-tight text-white">
-            DeRojas<span className="text-cyan-400">.ai</span>
+            derojas<span className="text-cyan-400">.ai</span>
           </Link>
           <nav className="flex items-center gap-6 text-sm text-gray-400">
             <a href="#projects" className="transition-colors hover:text-white">
@@ -84,8 +77,9 @@ export default function Home() {
             </span>
           </h1>
           <p className="animate-fade-in-up animate-delay-100 mx-auto max-w-xl text-lg leading-relaxed text-gray-400">
-            Dr. Joaquin De Rojas is an ophthalmologist and developer creating
-            open-source AI tools that bring machine learning to the clinic.
+            I&apos;m an ophthalmologist and developer creating AI tools that
+            bring the power of generative AI and machine learning to the clinic
+            and OR.
           </p>
           <div className="animate-fade-in-up animate-delay-200 mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -129,30 +123,36 @@ export default function Home() {
               href="https://aicalc.derojas.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="glass card-glow group relative rounded-2xl p-8 transition-all"
+              className="glass card-glow group relative overflow-hidden rounded-2xl transition-all"
             >
-              <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-400">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z" />
-                  </svg>
+              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-cyan-950/40 to-gray-900/40 p-6">
+                <Image
+                  src="/aicalc-preview.png"
+                  alt="De Rojas AI Calc"
+                  width={160}
+                  height={160}
+                  className="object-contain drop-shadow-lg"
+                />
+              </div>
+              <div className="p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
+                    Live
+                  </span>
                 </div>
-                <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
-                  Live
+                <h3 className="mb-2 text-xl font-bold text-white">
+                  derojas AI Calc
+                </h3>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  An ML-powered arcuate incision calculator for cataract surgery.
+                  Uses machine learning to predict astigmatism correction outcomes
+                  for femtosecond laser-assisted procedures, helping surgeons plan
+                  more precise treatments.
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition-colors group-hover:text-cyan-300">
+                  Open app <ArrowIcon />
                 </span>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-white">
-                De Rojas AI Calc
-              </h3>
-              <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                An ML-powered arcuate incision calculator for cataract surgery.
-                Uses machine learning to predict astigmatism correction outcomes
-                for femtosecond laser-assisted procedures, helping surgeons plan
-                more precise treatments.
-              </p>
-              <span className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition-colors group-hover:text-cyan-300">
-                Open app <ArrowIcon />
-              </span>
             </a>
 
             {/* SightFlow Card */}
@@ -160,29 +160,34 @@ export default function Home() {
               href="https://github.com/wak1616/SightFlow"
               target="_blank"
               rel="noopener noreferrer"
-              className="glass card-glow group relative rounded-2xl p-8 transition-all"
+              className="glass card-glow group relative overflow-hidden rounded-2xl transition-all"
             >
-              <div className="mb-4 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-500/10 text-violet-400">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
+              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-violet-950/40 to-gray-900/40 p-6">
+                <Image
+                  src="/sightflow-preview.png"
+                  alt="SightFlow"
+                  width={160}
+                  height={160}
+                  className="object-contain drop-shadow-lg"
+                />
+              </div>
+              <div className="p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
+                    GitHub
+                  </span>
                 </div>
-                <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
-                  Open Source
+                <h3 className="mb-2 text-xl font-bold text-white">SightFlow</h3>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  An AI-powered virtual scribe Chrome extension built for Nextech
+                  EMR. Listens to patient encounters and automatically generates
+                  structured clinical notes, saving ophthalmologists time on
+                  documentation.
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
+                  View on GitHub <ArrowIcon />
                 </span>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-white">SightFlow</h3>
-              <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                An AI-powered virtual scribe Chrome extension built for Nextech
-                EMR. Listens to patient encounters and automatically generates
-                structured clinical notes, saving ophthalmologists time on
-                documentation.
-              </p>
-              <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
-                View on GitHub <ArrowIcon />
-              </span>
             </a>
           </div>
         </div>
@@ -200,13 +205,21 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="glass iris-glow relative mx-auto max-w-xl rounded-3xl p-10 transition-all">
-            {/* Decorative glow orb */}
-            <div className="absolute -top-6 left-1/2 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-cyan-500 shadow-lg shadow-violet-500/30">
-              <SparkleIcon />
+          <div className="glass iris-glow relative mx-auto max-w-xl rounded-3xl p-10 pt-20 transition-all">
+            {/* Iris avatar */}
+            <div className="absolute -top-12 left-1/2 -translate-x-1/2">
+              <div className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-violet-500/30 shadow-lg shadow-violet-500/20">
+                <Image
+                  src="/iris-avatar.png"
+                  alt="Iris — AI Assistant"
+                  width={96}
+                  height={96}
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </div>
 
-            <div className="mt-4">
+            <div>
               <h3 className="mb-3 text-xl font-bold text-white">
                 Hi, I&apos;m Iris
               </h3>
@@ -234,7 +247,7 @@ export default function Home() {
       <footer className="border-t border-white/5 py-10 px-6">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} DeRojas.ai. All rights reserved.
+            &copy; {new Date().getFullYear()} Joaquin De Rojas Consulting LLC. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a

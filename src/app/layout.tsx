@@ -8,15 +8,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DeRojas.ai — AI-Driven Innovation in Ophthalmology",
+  title: "derojas.ai — AI-Driven Innovation in Ophthalmology",
   description:
     "Dr. Joaquin De Rojas builds AI tools for ophthalmology and healthcare. Explore AI Calc, SightFlow, and meet Iris — his AI assistant.",
   openGraph: {
-    title: "DeRojas.ai — AI-Driven Innovation in Ophthalmology",
+    title: "derojas.ai — AI-Driven Innovation in Ophthalmology",
     description:
       "Dr. Joaquin De Rojas builds AI tools for ophthalmology and healthcare.",
     url: "https://derojas.ai",
-    siteName: "DeRojas.ai",
+    siteName: "derojas.ai",
     type: "website",
   },
 };
