@@ -66,20 +66,14 @@ export default function Home() {
       {/* Hero */}
       <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-16 text-center">
         <div className="animate-fade-in-up max-w-3xl">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-cyan-400">
-            Ophthalmology &times; Artificial Intelligence
-          </p>
-          <h1 className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Building the future of
-            <br />
-            <span className="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
-              eye care with AI
-            </span>
+          <h1 className="mb-4 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Dr. Joaquin De Rojas
           </h1>
+          <p className="mb-6 text-sm font-medium uppercase tracking-widest text-cyan-400">
+            Ophthalmologist &middot; Medical Director &middot; Builder of AI for Clinical Augmentation and Automation
+          </p>
           <p className="animate-fade-in-up animate-delay-100 mx-auto max-w-xl text-lg leading-relaxed text-gray-400">
-            I&apos;m an ophthalmologist and developer creating AI tools that
-            bring the power of generative AI and machine learning to the clinic
-            and OR.
+            Designing intelligent systems that integrate directly into medical workflows.
           </p>
           <div className="animate-fade-in-up animate-delay-200 mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -179,10 +173,10 @@ export default function Home() {
                 </div>
                 <h3 className="mb-2 text-xl font-bold text-white">SightFlow</h3>
                 <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                  An AI-powered virtual scribe Chrome extension built for Nextech
-                  EMR. Listens to patient encounters and automatically generates
-                  structured clinical notes, saving ophthalmologists time on
-                  documentation.
+                  EMR-native structured AI automation for ophthalmology. Integrates
+                  directly into Nextech to capture patient encounters and generate
+                  structured clinical documentation — replacing manual scribing with
+                  intelligent, workflow-aligned automation.
                 </p>
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
                   View on GitHub <ArrowIcon />
@@ -223,21 +217,30 @@ export default function Home() {
               <h3 className="mb-3 text-xl font-bold text-white">
                 Hi, I&apos;m Iris
               </h3>
+              <p className="mb-4 text-sm leading-relaxed text-gray-400">
+                I&apos;m Dr. De Rojas&apos;s AI assistant — a fully autonomous
+                system he built and maintains, running 24/7 on secure cloud
+                infrastructure. I handle his email, calendar, research, and
+                professional communications in real time.
+              </p>
+              <p className="mb-4 text-sm leading-relaxed text-gray-400">
+                This isn&apos;t a chatbot demo. It&apos;s production AI
+                infrastructure — multi-model pipelines, real-time webhooks,
+                automated workflows, and hardened security. Built by a surgeon
+                who ships code.
+              </p>
               <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                I&apos;m Dr. De Rojas&apos;s AI assistant. Have a question about
-                his projects, research, or just want to get in touch? Send me an
-                email and I&apos;ll make sure it gets to him.
+                Get in touch — whether you&apos;re exploring advisory
+                opportunities, building in healthcare AI, or just want to
+                connect.
               </p>
               <a
                 href="mailto:derojas.assistant@gmail.com"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
               >
                 <MailIcon />
-                Email Iris
-              </a>
-              <p className="mt-4 text-xs text-gray-500">
                 derojas.assistant@gmail.com
-              </p>
+              </a>
             </div>
           </div>
         </div>
