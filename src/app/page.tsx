@@ -52,7 +52,7 @@ export default function Home() {
               Iris
             </a>
             <a
-              href="https://www.linkedin.com/in/joaquin-de-rojas"
+              href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors hover:text-white"
@@ -251,7 +251,7 @@ export default function Home() {
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="https://www.linkedin.com/in/joaquin-de-rojas"
+              href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 transition-colors hover:text-white"
