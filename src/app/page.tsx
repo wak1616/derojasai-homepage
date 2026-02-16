@@ -229,8 +229,8 @@ export default function Home() {
                 </div>
                 <h3 className="mb-2 text-xl font-bold text-white">PAC Guide</h3>
                 <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                  AI-powered knowledge base and agent system for US Eye&apos;s
-                  Patient Access Center in Florida. Helps call center staff
+                  AI-powered knowledge base and agent system for US Eye
+                  Florida&apos;s patient access center (PAC). Helps call center staff
                   schedule appointments, triage ER calls, verify insurance, and
                   route patients across 50+ providers — using AI agents that
                   answer questions in real time. Initiated by De Rojas and
