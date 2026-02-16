@@ -49,7 +49,7 @@ export default function Home() {
               Projects
             </a>
             <a href="#iris" className="transition-colors hover:text-white">
-              Iris
+              Connect
             </a>
             <a
               href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
@@ -73,7 +73,7 @@ export default function Home() {
             Ophthalmologist &middot; Medical Director &middot; Builder of AI for Clinical Augmentation and Automation
           </p>
           <p className="animate-fade-in-up animate-delay-100 mx-auto max-w-xl text-lg leading-relaxed text-gray-400">
-            Designing intelligent systems that integrate directly into medical workflows.
+            Designing intelligent systems that integrate directly into medical workflows — and always looking to collaborate with health tech developers on new and existing projects.
           </p>
           <div className="animate-fade-in-up animate-delay-200 mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -111,7 +111,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* AI Calc Card */}
             <a
               href="https://aicalc.derojas.ai"
@@ -183,6 +183,49 @@ export default function Home() {
                 </span>
               </div>
             </a>
+
+            {/* PAC Guide Card */}
+            <div className="glass card-glow-amber group relative overflow-hidden rounded-2xl transition-all">
+              <div className="flex h-48 flex-col items-center justify-center bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
+                <div className="rounded-2xl border border-amber-500/20 bg-amber-500/5 px-6 py-4 text-center">
+                  <div className="text-3xl font-black tracking-tight text-amber-400/80">PAC</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-amber-400/40">Guide</div>
+                </div>
+              </div>
+              <div className="p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
+                    Live
+                  </span>
+                </div>
+                <h3 className="mb-2 text-xl font-bold text-white">PAC Guide</h3>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  AI-powered knowledge base and agent system for US Eye&apos;s
+                  Patient Access Center in Florida. Helps call center staff
+                  schedule appointments, triage ER calls, verify insurance, and
+                  route patients across 50+ providers — using AI agents that
+                  answer questions in real time. Initiated by De Rojas and
+                  co-developed with{" "}
+                  <a
+                    href="https://www.raiaai.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-400 underline underline-offset-2 hover:text-amber-300"
+                  >
+                    Raia
+                  </a>
+                  .
+                </p>
+                <a
+                  href="https://us-eye-florida.gitbook.io/pac-guide"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-amber-400 transition-colors hover:text-amber-300"
+                >
+                  Explore guide <ArrowIcon />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -192,7 +235,7 @@ export default function Home() {
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-16">
             <p className="mb-2 text-sm font-medium uppercase tracking-widest text-violet-400">
-              AI Assistant
+              Collaborate
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Meet Iris
@@ -230,9 +273,11 @@ export default function Home() {
                 who ships code.
               </p>
               <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                Get in touch — whether you&apos;re exploring advisory
-                opportunities, building in healthcare AI, or just want to
-                connect.
+                Dr. De Rojas is always looking to collaborate with health tech
+                developers on new and existing projects — whether you&apos;re
+                building in healthcare AI, exploring automation for your
+                organization, or have an idea worth pursuing. Reach out and
+                let&apos;s build something together.
               </p>
               <a
                 href="mailto:derojas.assistant@gmail.com"
