@@ -154,7 +154,7 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className="mb-2 text-xl font-bold text-white">
-                  derojas AI Calc
+                  AI Calc
                 </h3>
                 <p className="mb-6 text-sm leading-relaxed text-gray-400">
                   An ML-powered arcuate incision calculator for cataract surgery.
