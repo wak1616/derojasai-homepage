@@ -82,6 +82,18 @@ export default function Home() {
       {/* Hero */}
       <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-16 text-center">
         <div className="animate-fade-in-up max-w-3xl">
+          <div className="mb-6">
+            <div className="relative mx-auto h-32 w-32 overflow-hidden rounded-full border-2 border-cyan-500/30 shadow-lg shadow-cyan-500/20">
+              <Image
+                src="/headshot.png"
+                alt="Dr. Joaquin De Rojas"
+                width={128}
+                height={128}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </div>
+          </div>
           <h1 className="mb-4 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
             Dr. Joaquin De Rojas
           </h1>
