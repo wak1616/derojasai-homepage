@@ -205,11 +205,21 @@ export default function Home() {
 
             {/* PAC Guide Card */}
             <div className="glass card-glow-amber group relative overflow-hidden rounded-2xl transition-all">
-              <div className="flex h-48 flex-col items-center justify-center bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
-                <div className="rounded-2xl border border-amber-500/20 bg-amber-500/5 px-6 py-4 text-center">
-                  <div className="text-3xl font-black tracking-tight text-amber-400/80">PAC</div>
-                  <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-amber-400/40">Guide</div>
-                </div>
+              <div className="flex h-48 flex-col items-center justify-center gap-3 bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
+                <Image
+                  src="/us-eye-logo.png"
+                  alt="US Eye"
+                  width={140}
+                  height={40}
+                  className="object-contain drop-shadow-lg"
+                />
+                <Image
+                  src="/pac-guide-preview.jpg"
+                  alt="PAC Guide"
+                  width={160}
+                  height={60}
+                  className="object-contain drop-shadow-lg"
+                />
               </div>
               <div className="p-8">
                 <div className="mb-4 flex items-center gap-3">
@@ -231,7 +241,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="text-amber-400 underline underline-offset-2 hover:text-amber-300"
                   >
-                    Raia
+                    raia
                   </a>
                   .
                 </p>
