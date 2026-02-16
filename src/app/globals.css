@@ -82,6 +82,26 @@ body {
   transform: translateY(-2px);
 }
 
+/* Emerald glow variant for upcoming cards */
+.card-glow-emerald {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-glow-emerald:hover {
+  box-shadow: 0 0 40px -8px rgba(16, 185, 129, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Rose glow variant for upcoming cards */
+.card-glow-rose {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-glow-rose:hover {
+  box-shadow: 0 0 40px -8px rgba(244, 63, 94, 0.25);
+  transform: translateY(-2px);
+}
+
 /* Iris card glow */
 .iris-glow {
   box-shadow: 0 0 60px -12px rgba(139, 92, 246, 0.2);

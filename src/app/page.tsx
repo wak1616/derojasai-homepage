@@ -251,7 +251,7 @@ export default function Home() {
                     href="https://www.raiaai.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-amber-400 underline underline-offset-2 hover:text-amber-300"
+                    className="relative z-10 text-amber-400 underline underline-offset-2 hover:text-amber-300"
                   >
                     raia
                   </a>
@@ -261,10 +261,81 @@ export default function Home() {
                   href="https://us-eye-florida.gitbook.io/pac-guide"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-amber-400 transition-colors hover:text-amber-300"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-amber-400 transition-colors hover:text-amber-300 after:absolute after:inset-0 after:content-['']"
                 >
                   Explore guide <ArrowIcon />
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Upcoming Projects */}
+      <section className="relative py-32 px-6">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-16 text-center">
+            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-emerald-400">
+              In Development
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              What&apos;s next
+            </h2>
+          </div>
+
+          <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
+            {/* LensPicker Card */}
+            <div className="glass card-glow-emerald group relative overflow-hidden rounded-2xl transition-all">
+              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
+                <svg className="h-20 w-20 text-emerald-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div className="p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
+                    Coming Soon
+                  </span>
+                </div>
+                <h3 className="mb-2 text-xl font-bold text-white">LensPicker</h3>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  A streamlined lens selection platform for cataract surgery.
+                  Sends personalized lifestyle surveys to patients before their
+                  consultation, then surfaces AI-driven recommendations so
+                  surgeons and patients can make more informed IOL decisions
+                  together.
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400">
+                  Details coming soon
+                </span>
+              </div>
+            </div>
+
+            {/* Outbound Call Agent Card */}
+            <div className="glass card-glow-rose group relative overflow-hidden rounded-2xl transition-all">
+              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-rose-950/40 to-gray-900/40 p-6">
+                <svg className="h-20 w-20 text-rose-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </div>
+              <div className="p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="rounded-full bg-rose-500/10 px-3 py-1 text-xs font-medium text-rose-400">
+                    Coming Soon
+                  </span>
+                </div>
+                <h3 className="mb-2 text-xl font-bold text-white">Outbound Call Agent</h3>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  An AI-powered voice agent for our ambulatory surgical center
+                  that proactively calls patients before their procedures to
+                  educate them on preoperative instructions, answer questions,
+                  and ensure they&apos;re fully prepared — reducing no-shows and
+                  improving the patient experience.
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-rose-400">
+                  Details coming soon
+                </span>
               </div>
             </div>
           </div>
