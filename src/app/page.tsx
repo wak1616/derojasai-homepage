@@ -73,7 +73,7 @@ export default function Home() {
             Ophthalmologist &middot; Medical Director &middot; Builder of AI for Clinical Augmentation and Automation
           </p>
           <p className="animate-fade-in-up animate-delay-100 mx-auto max-w-xl text-lg leading-relaxed text-gray-400">
-            Designing intelligent systems that integrate directly into medical workflows — and always looking to collaborate with health tech developers on new and existing projects.
+            ASCRS presenter. Built and shipped production AI tools used in real clinical workflows — and always looking to collaborate with health tech developers on new and existing projects.
           </p>
           <div className="animate-fade-in-up animate-delay-200 mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -132,6 +132,9 @@ export default function Home() {
                 <div className="mb-4 flex items-center gap-3">
                   <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
                     Live
+                  </span>
+                  <span className="rounded-full bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-400">
+                    Best Paper of Session — ASCRS 2025
                   </span>
                 </div>
                 <h3 className="mb-2 text-xl font-bold text-white">
