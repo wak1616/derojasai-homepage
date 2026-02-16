@@ -287,28 +287,28 @@ export default function Home() {
 
             <div>
               <h3 className="mb-3 text-xl font-bold text-white">
-                Hi, I&apos;m Iris
+                Hi, I&apos;m Iris!
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-gray-400">
-                I&apos;m Dr. De Rojas&apos;s AI assistant — a fully autonomous
+                I&apos;m Dr. De Rojas&apos;s AI assistant, a fully autonomous
                 system he built and maintains, running 24/7 on secure cloud
                 infrastructure. I handle his email, calendar, research, and
                 professional communications in real time.
               </p>
               <p className="mb-4 text-sm leading-relaxed text-gray-400">
                 This isn&apos;t a chatbot demo. It&apos;s production AI
-                infrastructure — multi-model pipelines, real-time webhooks,
+                infrastructure: multi-model pipelines, real-time webhooks,
                 automated workflows, and hardened security. Built by a surgeon
                 who ships code.
               </p>
               <p className="mb-6 text-sm leading-relaxed text-gray-400">
                 Dr. De Rojas is always looking to collaborate with health tech
-                developers on new and existing projects — whether you&apos;re
+                developers on new and existing projects, whether you&apos;re
                 building in healthcare AI, exploring automation for your
                 organization, or have an idea worth pursuing. The best way to
                 get in touch is to email{" "}
                 <span className="font-medium text-white">derojas.assistant@gmail.com</span>
-                {" "}— Iris will make sure it gets to the right place.
+                {" "}and Iris will make sure it gets to the right place.
               </p>
               <a
                 href="mailto:derojas.assistant@gmail.com"
