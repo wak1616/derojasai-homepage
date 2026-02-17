@@ -141,80 +141,47 @@ export default function Home() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {/* AI Calc Card */}
-            <a
-              href="https://aicalc.derojas.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass card-glow group relative overflow-hidden rounded-2xl transition-all"
-            >
-              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-cyan-950/40 to-gray-900/40 p-6">
-                <Image
-                  src="/aicalc-preview.png"
-                  alt="De Rojas AI Calc"
-                  width={160}
-                  height={160}
-                  className="object-contain drop-shadow-lg"
-                />
-              </div>
-              <div className="p-8">
-                <div className="mb-4 flex items-center gap-3">
-                  <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
-                    Live
-                  </span>
-                  <span className="rounded-full bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-400">
-                    Best Paper of Session — ASCRS 2025
-                  </span>
-                </div>
-                <h3 className="mb-2 text-xl font-bold text-white">
-                  AI Calc
-                </h3>
-                <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                  An ML-powered arcuate incision calculator for cataract surgery.
-                  Uses machine learning to predict astigmatism correction outcomes
-                  for femtosecond laser-assisted procedures, helping surgeons plan
-                  more precise treatments.
-                </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition-colors group-hover:text-cyan-300">
-                  Open app <ArrowIcon />
-                </span>
-              </div>
-            </a>
-
             {/* SightFlow Card */}
-            <a
-              href="https://github.com/wak1616/SightFlow"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass card-glow group relative overflow-hidden rounded-2xl transition-all"
-            >
-              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-violet-950/40 to-gray-900/40 p-6">
-                <Image
-                  src="/sightflow-preview.png"
-                  alt="SightFlow"
-                  width={160}
-                  height={160}
-                  className="object-contain drop-shadow-lg"
-                />
-              </div>
-              <div className="p-8">
-                <div className="mb-4 flex items-center gap-3">
-                  <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
-                    GitHub
-                  </span>
+            <VideoModal videoSrc="/sightflow-demo.mp4">
+              <div className="glass card-glow group relative overflow-hidden rounded-2xl transition-all">
+                <div className="flex h-48 items-center justify-center bg-gradient-to-br from-violet-950/40 to-gray-900/40 p-6">
+                  <Image
+                    src="/sightflow-preview.png"
+                    alt="SightFlow"
+                    width={160}
+                    height={160}
+                    className="object-contain drop-shadow-lg"
+                  />
                 </div>
-                <h3 className="mb-2 text-xl font-bold text-white">SightFlow</h3>
-                <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                  EMR-native structured AI automation for ophthalmology. Integrates
-                  directly into Nextech to capture patient encounters and generate
-                  structured clinical documentation — replacing manual scribing with
-                  intelligent, workflow-aligned automation.
-                </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
-                  View on GitHub <ArrowIcon />
-                </span>
+                <div className="p-8">
+                  <div className="mb-4 flex items-center gap-3">
+                    <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
+                      GitHub
+                    </span>
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold text-white">SightFlow</h3>
+                  <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                    EMR-native structured AI automation for ophthalmology. Integrates
+                    directly into Nextech to capture patient encounters and generate
+                    structured clinical documentation — replacing manual scribing with
+                    intelligent, workflow-aligned automation.
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
+                    View demo <ArrowIcon />
+                  </span>
+                  <div className="mt-3">
+                    <a
+                      href="https://github.com/wak1616/SightFlow"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative z-10 inline-flex items-center gap-2 text-sm font-medium text-gray-400 transition-colors hover:text-violet-300"
+                    >
+                      View GitHub repo <ArrowIcon />
+                    </a>
+                  </div>
+                </div>
               </div>
-            </a>
+            </VideoModal>
 
             {/* PAC Guide Card */}
             <VideoModal videoSrc="/pac-guide-demo.mp4">
@@ -265,6 +232,46 @@ export default function Home() {
                 </div>
               </div>
             </VideoModal>
+
+            {/* AI Calc Card */}
+            <a
+              href="https://aicalc.derojas.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass card-glow group relative overflow-hidden rounded-2xl transition-all"
+            >
+              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-cyan-950/40 to-gray-900/40 p-6">
+                <Image
+                  src="/aicalc-preview.png"
+                  alt="De Rojas AI Calc"
+                  width={160}
+                  height={160}
+                  className="object-contain drop-shadow-lg"
+                />
+              </div>
+              <div className="p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
+                    Live
+                  </span>
+                  <span className="rounded-full bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-400">
+                    Best Paper of Session — ASCRS 2025
+                  </span>
+                </div>
+                <h3 className="mb-2 text-xl font-bold text-white">
+                  AI Calc
+                </h3>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  An ML-powered arcuate incision calculator for cataract surgery.
+                  Uses machine learning to predict astigmatism correction outcomes
+                  for femtosecond laser-assisted procedures, helping surgeons plan
+                  more precise treatments.
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition-colors group-hover:text-cyan-300">
+                  Open app <ArrowIcon />
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
