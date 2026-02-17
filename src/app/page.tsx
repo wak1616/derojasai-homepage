@@ -336,7 +336,16 @@ export default function Home() {
                   that proactively calls patients before their procedures to
                   educate them on preoperative instructions, answer questions,
                   and ensure they&apos;re fully prepared — reducing no-shows and
-                  improving the patient experience.
+                  improving the patient experience. Co-developing with{" "}
+                  <a
+                    href="https://www.raiaai.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-rose-400 underline underline-offset-2 hover:text-rose-300"
+                  >
+                    raia
+                  </a>
+                  .
                 </p>
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-rose-400">
                   Details coming soon
