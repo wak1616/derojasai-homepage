@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import VideoModal from "./video-modal";
 
 function ArrowIcon() {
   return (
@@ -216,57 +217,54 @@ export default function Home() {
             </a>
 
             {/* PAC Guide Card */}
-            <div className="glass card-glow-amber group relative overflow-hidden rounded-2xl transition-all">
-              <div className="flex h-48 flex-col items-center justify-center gap-3 bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
-                <Image
-                  src="/us-eye-logo.png"
-                  alt="US Eye"
-                  width={140}
-                  height={40}
-                  className="object-contain drop-shadow-lg"
-                />
-                <Image
-                  src="/pac-guide-preview.jpg"
-                  alt="PAC Guide"
-                  width={160}
-                  height={60}
-                  className="object-contain drop-shadow-lg"
-                />
-              </div>
-              <div className="p-8">
-                <div className="mb-4 flex items-center gap-3">
-                  <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
-                    Live
+            <VideoModal videoSrc="/pac-guide-demo.mp4">
+              <div className="glass card-glow-amber group relative overflow-hidden rounded-2xl transition-all">
+                <div className="flex h-48 flex-col items-center justify-center gap-3 bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
+                  <Image
+                    src="/us-eye-logo.png"
+                    alt="US Eye"
+                    width={140}
+                    height={40}
+                    className="object-contain drop-shadow-lg"
+                  />
+                  <Image
+                    src="/pac-guide-preview.jpg"
+                    alt="PAC Guide"
+                    width={160}
+                    height={60}
+                    className="object-contain drop-shadow-lg"
+                  />
+                </div>
+                <div className="p-8">
+                  <div className="mb-4 flex items-center gap-3">
+                    <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
+                      Live
+                    </span>
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold text-white">PAC Guide</h3>
+                  <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                    AI-powered knowledge base and agent system for US Eye
+                    Florida&apos;s patient access center (PAC). Helps call center staff
+                    schedule appointments, triage ER calls, verify insurance, and
+                    route patients across 50+ providers — using AI agents that
+                    answer questions in real time. Initiated by De Rojas and
+                    co-developed with{" "}
+                    <a
+                      href="https://www.raiaai.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative z-10 text-amber-400 underline underline-offset-2 hover:text-amber-300"
+                    >
+                      raia
+                    </a>
+                    .
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-amber-400 transition-colors group-hover:text-amber-300">
+                    View demo <ArrowIcon />
                   </span>
                 </div>
-                <h3 className="mb-2 text-xl font-bold text-white">PAC Guide</h3>
-                <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                  AI-powered knowledge base and agent system for US Eye
-                  Florida&apos;s patient access center (PAC). Helps call center staff
-                  schedule appointments, triage ER calls, verify insurance, and
-                  route patients across 50+ providers — using AI agents that
-                  answer questions in real time. Initiated by De Rojas and
-                  co-developed with{" "}
-                  <a
-                    href="https://www.raiaai.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative z-10 text-amber-400 underline underline-offset-2 hover:text-amber-300"
-                  >
-                    raia
-                  </a>
-                  .
-                </p>
-                <a
-                  href="https://us-eye-florida.gitbook.io/pac-guide"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-amber-400 transition-colors hover:text-amber-300 after:absolute after:inset-0 after:content-['']"
-                >
-                  Explore guide <ArrowIcon />
-                </a>
               </div>
-            </div>
+            </VideoModal>
           </div>
         </div>
       </section>
