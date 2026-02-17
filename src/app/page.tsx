@@ -374,9 +374,8 @@ export default function Home() {
                 <Image
                   src="/iris-avatar.png"
                   alt="Iris, AI Assistant"
-                  width={96}
-                  height={96}
-                  className="h-full w-full object-cover"
+                  fill
+                  className="object-cover object-[65%_0%] scale-130"
                 />
               </div>
             </div>
