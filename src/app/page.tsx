@@ -102,7 +102,7 @@ export default function Home() {
             Ophthalmologist &middot; Medical Director &middot; Builder of AI for Clinical Augmentation and Automation
           </p>
           <p className="animate-fade-in-up animate-delay-100 mx-auto max-w-xl text-lg leading-relaxed text-gray-400">
-            ASCRS presenter. Built and shipped production AI tools used in real clinical workflows — and always looking to collaborate with health tech developers on new and existing projects.
+            Building modern, AI-first infrastructure for healthcare and ophthalmology — tools that augment clinicians, streamline workflows, and ultimately serve patients.
           </p>
           <div className="animate-fade-in-up animate-delay-200 mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
