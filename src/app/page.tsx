@@ -156,7 +156,7 @@ export default function Home() {
                 <div className="p-8">
                   <div className="mb-4 flex items-center gap-3">
                     <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
-                      GitHub
+                      Enterprise
                     </span>
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white">SightFlow</h3>
@@ -169,16 +169,6 @@ export default function Home() {
                   <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
                     View demo <ArrowIcon />
                   </span>
-                  <div className="mt-3">
-                    <a
-                      href="https://github.com/wak1616/SightFlow"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="relative z-10 inline-flex items-center gap-2 text-sm font-medium text-gray-400 transition-colors hover:text-violet-300"
-                    >
-                      View GitHub repo <ArrowIcon />
-                    </a>
-                  </div>
                 </div>
               </div>
             </VideoModal>
