@@ -102,7 +102,7 @@ export default function Home() {
             Ophthalmologist &middot; Medical Director &middot; Builder of AI for Clinical Augmentation and Automation
           </p>
           <p className="animate-fade-in-up animate-delay-100 mx-auto max-w-xl text-lg leading-relaxed text-gray-400">
-            Building modern, AI-first infrastructure for healthcare and ophthalmology — tools that augment clinicians, streamline workflows, and ultimately serve patients.
+            Building modern, AI-first infrastructure for healthcare and ophthalmology: tools that augment clinicians, streamline workflows, and ultimately serve patients.
           </p>
           <div className="animate-fade-in-up animate-delay-200 mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -163,7 +163,7 @@ export default function Home() {
                   <p className="mb-6 text-sm leading-relaxed text-gray-400">
                     EMR-native structured AI automation for ophthalmology. Integrates
                     directly into Nextech to capture patient encounters and generate
-                    structured clinical documentation — replacing manual scribing with
+                    structured clinical documentation, replacing manual scribing with
                     intelligent, workflow-aligned automation.
                   </p>
                   <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
@@ -203,7 +203,7 @@ export default function Home() {
                     AI-powered knowledge base and agent system for US Eye
                     Florida&apos;s patient access center (PAC). Helps call center staff
                     schedule appointments, triage ER calls, verify insurance, and
-                    route patients across 50+ providers — using AI agents that
+                    route patients across 50+ providers, using AI agents that
                     answer questions in real time. Initiated by De Rojas and
                     co-developed with{" "}
                     <a
@@ -245,7 +245,7 @@ export default function Home() {
                     Live
                   </span>
                   <span className="rounded-full bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-400">
-                    Best Paper of Session — ASCRS 2025
+                    Best Paper of Session, ASCRS 2025
                   </span>
                 </div>
                 <h3 className="mb-2 text-xl font-bold text-white">
@@ -334,7 +334,7 @@ export default function Home() {
                   An AI-powered voice agent for our ambulatory surgical center
                   that proactively calls patients before their procedures to
                   educate them on preoperative instructions, answer questions,
-                  and ensure they&apos;re fully prepared — reducing no-shows and
+                  and ensure they&apos;re fully prepared, reducing no-shows and
                   improving the patient experience. Co-developing with{" "}
                   <a
                     href="https://www.raiaai.com/"
@@ -373,7 +373,7 @@ export default function Home() {
               <div className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-violet-500/30 shadow-lg shadow-violet-500/20">
                 <Image
                   src="/iris-avatar.png"
-                  alt="Iris — AI Assistant"
+                  alt="Iris, AI Assistant"
                   width={96}
                   height={96}
                   className="h-full w-full object-cover"
