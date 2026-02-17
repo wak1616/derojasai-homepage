@@ -143,7 +143,7 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* SightFlow Card */}
             <VideoModal videoSrc="/sightflow-demo.mp4">
-              <div className="glass card-glow group relative h-full overflow-hidden rounded-2xl transition-all">
+              <div className="glass card-glow group relative flex h-full flex-col overflow-hidden rounded-2xl transition-all">
                 <div className="flex h-48 items-center justify-center bg-gradient-to-br from-violet-950/40 to-gray-900/40 p-6">
                   <Image
                     src="/sightflow-preview.png"
@@ -153,7 +153,7 @@ export default function Home() {
                     className="object-contain drop-shadow-lg"
                   />
                 </div>
-                <div className="p-8">
+                <div className="flex flex-1 flex-col p-8">
                   <div className="mb-4 flex items-center gap-3">
                     <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
                       Pilot
@@ -166,7 +166,7 @@ export default function Home() {
                     structured clinical documentation, replacing manual scribing with
                     intelligent, workflow-aligned automation.
                   </p>
-                  <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
+                  <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
                     View demo <ArrowIcon />
                   </span>
                 </div>
@@ -175,7 +175,7 @@ export default function Home() {
 
             {/* PAC Guide Card */}
             <VideoModal videoSrc="/pac-guide-demo.mp4">
-              <div className="glass card-glow-amber group relative h-full overflow-hidden rounded-2xl transition-all">
+              <div className="glass card-glow-amber group relative flex h-full flex-col overflow-hidden rounded-2xl transition-all">
                 <div className="flex h-48 flex-col items-center justify-center gap-3 bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
                   <Image
                     src="/us-eye-logo.png"
@@ -192,7 +192,7 @@ export default function Home() {
                     className="object-contain drop-shadow-lg"
                   />
                 </div>
-                <div className="p-8">
+                <div className="flex flex-1 flex-col p-8">
                   <div className="mb-4 flex items-center gap-3">
                     <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
                       Live
@@ -216,7 +216,7 @@ export default function Home() {
                     </a>
                     .
                   </p>
-                  <span className="inline-flex items-center gap-2 text-sm font-medium text-amber-400 transition-colors group-hover:text-amber-300">
+                  <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-amber-400 transition-colors group-hover:text-amber-300">
                     View demo <ArrowIcon />
                   </span>
                 </div>
@@ -228,7 +228,7 @@ export default function Home() {
               href="https://aicalc.derojas.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="glass card-glow group relative overflow-hidden rounded-2xl transition-all"
+              className="glass card-glow group relative flex flex-col overflow-hidden rounded-2xl transition-all"
             >
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-cyan-950/40 to-gray-900/40 p-6">
                 <Image
@@ -239,7 +239,7 @@ export default function Home() {
                   className="object-contain drop-shadow-lg"
                 />
               </div>
-              <div className="p-8">
+              <div className="flex flex-1 flex-col p-8">
                 <div className="mb-4 flex items-center gap-3">
                   <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
                     Live
@@ -257,7 +257,7 @@ export default function Home() {
                   for femtosecond laser-assisted procedures, helping surgeons plan
                   more precise treatments.
                 </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition-colors group-hover:text-cyan-300">
+                <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition-colors group-hover:text-cyan-300">
                   Open app <ArrowIcon />
                 </span>
               </div>
