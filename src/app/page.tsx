@@ -309,7 +309,16 @@ export default function Home() {
                   Sends personalized lifestyle surveys to patients before their
                   consultation, then surfaces AI-driven recommendations so
                   surgeons and patients can make more informed IOL decisions
-                  together.
+                  together. Co-developing with{" "}
+                  <a
+                    href="https://www.linkedin.com/in/garywortz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-400 underline underline-offset-2 hover:text-emerald-300"
+                  >
+                    Gary Wortz, MD
+                  </a>
+                  .
                 </p>
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400">
                   Details coming soon
