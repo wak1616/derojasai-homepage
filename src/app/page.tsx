@@ -156,7 +156,7 @@ export default function Home() {
                 <div className="p-8">
                   <div className="mb-4 flex items-center gap-3">
                     <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
-                      Enterprise
+                      Pilot
                     </span>
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white">SightFlow</h3>
