@@ -143,7 +143,7 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* SightFlow Card */}
             <VideoModal videoSrc="/sightflow-demo.mp4">
-              <div className="glass card-glow group relative overflow-hidden rounded-2xl transition-all">
+              <div className="glass card-glow group relative h-full overflow-hidden rounded-2xl transition-all">
                 <div className="flex h-48 items-center justify-center bg-gradient-to-br from-violet-950/40 to-gray-900/40 p-6">
                   <Image
                     src="/sightflow-preview.png"
@@ -175,7 +175,7 @@ export default function Home() {
 
             {/* PAC Guide Card */}
             <VideoModal videoSrc="/pac-guide-demo.mp4">
-              <div className="glass card-glow-amber group relative overflow-hidden rounded-2xl transition-all">
+              <div className="glass card-glow-amber group relative h-full overflow-hidden rounded-2xl transition-all">
                 <div className="flex h-48 flex-col items-center justify-center gap-3 bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
                   <Image
                     src="/us-eye-logo.png"

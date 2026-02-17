@@ -42,7 +42,7 @@ export default function VideoModal({
           if ((e.target as HTMLElement).closest("a[href]")) return;
           setOpen(true);
         }}
-        className="cursor-pointer"
+        className="h-full cursor-pointer"
       >
         {children}
       </div>
