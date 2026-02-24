@@ -421,7 +421,7 @@ export default function Home() {
       <footer className="border-t border-white/5 py-10 px-6">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Joaquin De Rojas Consulting LLC. All rights reserved.
+            &copy; {new Date().getFullYear()} Joaquin De Rojas. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a
