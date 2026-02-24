@@ -402,15 +402,15 @@ export default function Home() {
                 building in healthcare AI, exploring automation for your
                 organization, or have an idea worth pursuing. The best way to
                 get in touch is to email{" "}
-                <span className="font-medium text-white">derojas.assistant@gmail.com</span>
+                <span className="font-medium text-white">iris@derojas.ai</span>
                 {" "}and Iris will make sure it gets to the right place.
               </p>
               <a
-                href="mailto:derojas.assistant@gmail.com"
+                href="mailto:iris@derojas.ai"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
               >
                 <MailIcon />
-                derojas.assistant@gmail.com
+                iris@derojas.ai
               </a>
             </div>
           </div>
