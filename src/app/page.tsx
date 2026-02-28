@@ -427,29 +427,27 @@ export default function Home() {
             height={48}
             className="opacity-60"
           />
-          <div className="flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} Joaquin De Rojas. All rights reserved.
-            </p>
-            <div className="flex items-center gap-4">
-              <a
-                href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 transition-colors hover:text-white"
-              >
-                <LinkedInIcon />
-              </a>
-              <a
-                href="https://x.com/JdeRojasMD"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 transition-colors hover:text-white"
-              >
-                <XIcon />
-              </a>
-            </div>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 transition-colors hover:text-white"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href="https://x.com/JdeRojasMD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 transition-colors hover:text-white"
+            >
+              <XIcon />
+            </a>
           </div>
+          <p className="text-sm text-gray-500">
+            &copy; {new Date().getFullYear()} derojas.ai. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
