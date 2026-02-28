@@ -419,27 +419,36 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-white/5 py-10 px-6">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Joaquin De Rojas. All rights reserved.
-          </p>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 transition-colors hover:text-white"
-            >
-              <LinkedInIcon />
-            </a>
-            <a
-              href="https://x.com/JdeRojasMD"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 transition-colors hover:text-white"
-            >
-              <XIcon />
-            </a>
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6">
+          <Image
+            src="/logo.png"
+            alt="derojas.ai logo"
+            width={48}
+            height={48}
+            className="opacity-60"
+          />
+          <div className="flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
+            <p className="text-sm text-gray-500">
+              &copy; {new Date().getFullYear()} Joaquin De Rojas. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 transition-colors hover:text-white"
+              >
+                <LinkedInIcon />
+              </a>
+              <a
+                href="https://x.com/JdeRojasMD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 transition-colors hover:text-white"
+              >
+                <XIcon />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
