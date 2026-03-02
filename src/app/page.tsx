@@ -166,9 +166,17 @@ export default function Home() {
                     structured clinical documentation, replacing manual scribing with
                     intelligent, workflow-aligned automation.
                   </p>
-                  <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
-                    View demo <ArrowIcon />
-                  </span>
+                  <div className="mt-auto flex items-center gap-4">
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
+                      View demo <ArrowIcon />
+                    </span>
+                    <a
+                      href="/privacy/sightflow"
+                      className="text-sm text-gray-500 transition-colors hover:text-violet-400"
+                    >
+                      Privacy Policy
+                    </a>
+                  </div>
                 </div>
               </div>
             </VideoModal>
