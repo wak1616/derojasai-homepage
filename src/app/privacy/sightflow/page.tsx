@@ -35,7 +35,7 @@ export default function SightFlowPrivacy() {
           SightFlow Privacy Policy
         </h1>
         <p className="mb-12 text-sm text-gray-500">
-          Effective March 1, 2026 &middot; Last updated March 1, 2026
+          Effective March 1, 2026 &middot; Last updated March 5, 2026
         </p>
 
         <div className="space-y-10 text-sm leading-relaxed">
@@ -269,6 +269,8 @@ export default function SightFlowPrivacy() {
               Joaquin De Rojas Consulting LLC
               <br />
               d/b/a derojas.ai
+              <br />
+              3319 Founders Club Dr, Sarasota, FL 34240
             </p>
             <p className="mt-2">
               Email:{" "}
