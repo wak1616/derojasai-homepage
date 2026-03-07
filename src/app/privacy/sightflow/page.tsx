@@ -35,15 +35,16 @@ export default function SightFlowPrivacy() {
           SightFlow Privacy Policy
         </h1>
         <p className="mb-12 text-sm text-gray-500">
-          Effective March 1, 2026 &middot; Last updated March 5, 2026
+          Effective March 1, 2026 &middot; Last updated March 7, 2026
         </p>
 
         <div className="space-y-10 text-sm leading-relaxed">
           <p>
             SightFlow is a product of Joaquin De Rojas Consulting LLC, d/b/a
             derojas.ai (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
-            &ldquo;our&rdquo;). This policy describes how the SightFlow Chrome
-            extension handles data.
+            &ldquo;our&rdquo;). This privacy policy describes how the SightFlow
+            Chrome extension (&ldquo;the Extension&rdquo;) collects, uses,
+            stores, and shares user data.
           </p>
 
           <Section title="What SightFlow Does">
@@ -55,31 +56,115 @@ export default function SightFlowPrivacy() {
             </p>
           </Section>
 
-          <Section title="Data We Process">
+          <Section title="User Data We Collect">
             <p className="mb-3">
-              During an encounter, SightFlow temporarily processes:
+              The Extension collects and processes the following categories of
+              user data:
+            </p>
+
+            <h3 className="mb-2 mt-4 text-sm font-semibold text-gray-200">
+              1. Data collected during use (transient &mdash; not stored)
+            </h3>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                <strong className="text-white">Voice audio</strong> &mdash;
+                recorded through the browser microphone during active dictation.
+                Audio is buffered locally in the browser, transmitted to our
+                backend for AI processing, and immediately discarded after the
+                response is returned. No audio is saved.
+              </li>
+              <li>
+                <strong className="text-white">Clinical text</strong> &mdash;
+                text visible in the open Nextech chart (e.g., patient history,
+                exam findings, diagnoses). Read from the page DOM during
+                processing, transmitted to our backend, and not stored.
+              </li>
+              <li>
+                <strong className="text-white">Uploaded files</strong> &mdash;
+                images or documents (JPG, PNG, PDF) that the user voluntarily
+                selects from their device for AI interpretation. Files are read
+                into memory, transmitted over HTTPS, processed, and immediately
+                discarded. They are not saved on our servers or in browser
+                storage.
+              </li>
+            </ul>
+
+            <h3 className="mb-2 mt-4 text-sm font-semibold text-gray-200">
+              2. Configuration data (stored locally)
+            </h3>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                <strong className="text-white">Organization ID and API key</strong>{" "}
+                &mdash; stored in Chrome&apos;s local storage (
+                <code className="text-xs text-violet-300">chrome.storage.local</code>
+                ) to authenticate requests to our backend. These are
+                organization-level identifiers, not personal user credentials.
+              </li>
+              <li>
+                <strong className="text-white">User preferences</strong>{" "}
+                &mdash; settings configured through the Extension&apos;s options
+                page are stored in{" "}
+                <code className="text-xs text-violet-300">chrome.storage.local</code>.
+                No personal information is included in these settings.
+              </li>
+            </ul>
+
+            <h3 className="mb-2 mt-4 text-sm font-semibold text-gray-200">
+              3. Operational metadata (logged server-side)
+            </h3>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                <strong className="text-white">
+                  Request metadata
+                </strong>{" "}
+                &mdash; when the Extension sends a request to our backend, we
+                log operational metadata including: timestamp, organization ID,
+                and AI token usage counts. These logs contain{" "}
+                <strong className="text-white">
+                  no patient data, no audio, no clinical text, and no
+                  personally identifiable information
+                </strong>
+                .
+              </li>
+            </ul>
+          </Section>
+
+          <Section title="Data We Do Not Collect">
+            <p className="mb-3">
+              We do not collect any of the following:
+            </p>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>Patient names, dates of birth, or medical record numbers</li>
+              <li>Insurance, billing, or financial information</li>
+              <li>Personal user account credentials or passwords</li>
+              <li>Device identifiers, browser fingerprints, or IP addresses</li>
+              <li>Browsing history or activity outside of Nextech</li>
+              <li>Location or geolocation data</li>
+              <li>Cookies or tracking technologies of any kind</li>
+            </ul>
+          </Section>
+
+          <Section title="How We Use Your Data">
+            <p className="mb-3">
+              All collected data is used solely for the following purposes:
             </p>
             <ul className="list-disc space-y-2 pl-5">
               <li>
-                <strong className="text-white">Voice audio</strong> recorded
-                through the browser microphone during active dictation
+                <strong className="text-white">Voice audio, clinical text, and uploaded files</strong>{" "}
+                are used exclusively to generate structured clinical
+                documentation for the current encounter. They are not used for
+                any other purpose, including advertising, analytics, or
+                profiling.
               </li>
               <li>
-                <strong className="text-white">Clinical text</strong> visible in
-                the open Nextech chart (e.g., patient history, exam findings,
-                diagnoses)
+                <strong className="text-white">Configuration data</strong> is
+                used to authenticate your requests and apply your preferences.
               </li>
               <li>
-                <strong className="text-white">Images or documents</strong>{" "}
-                uploaded from the device&apos;s file system (e.g., photos of
-                external clinical notes or referral documents submitted for AI
-                interpretation)
+                <strong className="text-white">Operational metadata</strong> is
+                used for usage metering, error diagnosis, and audit compliance.
               </li>
             </ul>
-            <p className="mt-3">
-              This data is used solely to generate structured clinical
-              documentation for the current encounter.
-            </p>
           </Section>
 
           <Section title="How Data Is Processed">
@@ -107,7 +192,7 @@ export default function SightFlowPrivacy() {
                 processing
               </li>
               <li>
-                The AI response is streamed back to the extension and used to
+                The AI response is streamed back to the Extension and used to
                 populate the Nextech chart
               </li>
               <li>
@@ -133,7 +218,7 @@ export default function SightFlowPrivacy() {
                 of birth, MRN, address, phone, SSN, insurance) from its output
               </li>
               <li>
-                Structured clinical data is streamed back to the extension for
+                Structured clinical data is streamed back to the Extension for
                 chart entry
               </li>
               <li>
@@ -143,46 +228,51 @@ export default function SightFlowPrivacy() {
             </ol>
           </Section>
 
-          <Section title="Data We Store">
-            <p className="mb-3">
-              <strong className="text-white">
-                We do not store patient data.
-              </strong>{" "}
-              Specifically:
-            </p>
+          <Section title="Data Storage">
+            <h3 className="mb-2 text-sm font-semibold text-gray-200">
+              What we store
+            </h3>
+            <ul className="mb-4 list-disc space-y-2 pl-5">
+              <li>
+                <strong className="text-white">Locally (in your browser)</strong>
+                : Organization ID, API key, and user preferences are stored in{" "}
+                <code className="text-xs text-violet-300">chrome.storage.local</code>.
+                This data never leaves your device except as part of
+                authenticated API requests to our backend.
+              </li>
+              <li>
+                <strong className="text-white">On our servers</strong>:
+                Operational metadata only (timestamps, organization ID, token
+                counts). These logs contain no patient data or personally
+                identifiable information.
+              </li>
+            </ul>
+
+            <h3 className="mb-2 text-sm font-semibold text-gray-200">
+              What we do not store
+            </h3>
             <ul className="list-disc space-y-2 pl-5">
               <li>
                 No audio recordings are saved or persisted after processing
               </li>
               <li>
                 No patient health information (PHI) is written to browser
-                storage
+                storage or our servers
               </li>
               <li>
-                No clinical data is logged on our servers &mdash; backend logs
-                contain only operational metadata (timestamps, token counts,
-                organization ID)
+                No clinical text, uploaded files, or AI-generated content is
+                retained on our servers
               </li>
               <li>
-                No patient-identifying information is included in AI processing
-                logs
+                No patient-identifying information is included in any logs
               </li>
             </ul>
           </Section>
 
-          <Section title="Data We Do Not Collect">
-            <ul className="list-disc space-y-2 pl-5">
-              <li>Patient names, dates of birth, or medical record numbers</li>
-              <li>Insurance or billing information</li>
-              <li>Device identifiers or browser fingerprints</li>
-              <li>Browsing history or activity outside of Nextech</li>
-              <li>Location data</li>
-            </ul>
-          </Section>
-
-          <Section title="Third-Party Services">
+          <Section title="Data Sharing">
             <p className="mb-3">
-              SightFlow uses the following third-party service for AI processing:
+              We share user data only with the following third-party service,
+              solely for the purpose of AI processing:
             </p>
             <ul className="list-disc space-y-2 pl-5">
               <li>
@@ -190,8 +280,10 @@ export default function SightFlowPrivacy() {
                   Google Cloud Platform (Vertex AI, Cloud Functions, Cloud Run)
                 </strong>{" "}
                 &mdash; HIPAA-compliant, covered under a signed Business
-                Associate Agreement. Google&apos;s HIPAA compliance information
-                is available at{" "}
+                Associate Agreement (BAA). Voice audio, clinical text, and
+                uploaded files are transmitted to Vertex AI for processing and
+                are not retained by Google beyond the immediate API call.
+                Google&apos;s HIPAA compliance information is available at{" "}
                 <a
                   href="https://cloud.google.com/security/compliance/hipaa"
                   target="_blank"
@@ -204,34 +296,89 @@ export default function SightFlowPrivacy() {
               </li>
             </ul>
             <p className="mt-3">
-              We do not share, sell, or transfer patient data to any other third
-              party.
+              <strong className="text-white">
+                We do not sell, rent, trade, or transfer user data to any other
+                third party.
+              </strong>{" "}
+              We do not use user data for advertising, analytics, or any purpose
+              unrelated to the Extension&apos;s core functionality.
             </p>
           </Section>
 
-          <Section title="HIPAA Compliance">
+          <Section title="Browser Permissions">
             <p className="mb-3">
-              SightFlow is designed for use in healthcare environments subject to
-              HIPAA. Our compliance measures include:
+              The Extension requests the following Chrome permissions, each used
+              for a specific purpose:
             </p>
             <ul className="list-disc space-y-2 pl-5">
               <li>
-                All AI processing routed through BAA-covered Google Cloud
+                <strong className="text-white">audioCapture</strong> &mdash;
+                access the browser microphone for voice dictation
+              </li>
+              <li>
+                <strong className="text-white">storage</strong> &mdash; save
+                configuration (organization ID, API key, preferences) locally in
+                the browser
+              </li>
+              <li>
+                <strong className="text-white">activeTab</strong> &mdash;
+                interact with the current Nextech tab to read chart data and
+                populate documentation
+              </li>
+              <li>
+                <strong className="text-white">sidePanel</strong> &mdash;
+                display the SightFlow assistant in Chrome&apos;s side panel
+              </li>
+              <li>
+                <strong className="text-white">tabs</strong> &mdash; coordinate
+                between Nextech chart and summary tabs for image selection
+              </li>
+              <li>
+                <strong className="text-white">scripting</strong> &mdash; inject
+                content scripts into Nextech pages to automate chart entry
+              </li>
+              <li>
+                <strong className="text-white">Host permissions</strong> &mdash;
+                limited to Nextech EMR domains (
+                <code className="text-xs text-violet-300">app1.intellechart.net</code>
+                ) and our Cloud Function endpoint. No other websites are
+                accessed.
+              </li>
+            </ul>
+          </Section>
+
+          <Section title="Cookies and Tracking">
+            <p>
+              The Extension does not use cookies, web beacons, pixels, or any
+              other tracking technologies. We do not track users across websites
+              or build user profiles.
+            </p>
+          </Section>
+
+          <Section title="Data Security">
+            <p className="mb-3">
+              We implement the following measures to protect user data:
+            </p>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                All data in transit is encrypted using TLS 1.2 or higher
+              </li>
+              <li>
+                All AI processing is routed through BAA-covered Google Cloud
                 infrastructure
               </li>
               <li>
-                Encryption in transit for all data transmissions (TLS 1.2+)
+                API keys are validated server-side on every request
               </li>
               <li>
-                No persistent storage of PHI in the extension or on our servers
+                No persistent storage of PHI in the Extension or on our servers
               </li>
               <li>
-                Audit logging of operational metadata (no PHI) for
-                accountability
+                Operational audit logging (without PHI) for accountability
               </li>
               <li>
                 Tightly scoped browser permissions (only Nextech domains and our
-                Cloud Function endpoints)
+                Cloud Function endpoint)
               </li>
               <li>
                 Chrome Manifest V3 security model (strict Content Security
@@ -241,18 +388,68 @@ export default function SightFlowPrivacy() {
           </Section>
 
           <Section title="Data Retention">
-            <p>
-              We do not retain patient data. Operational logs (containing no PHI)
-              are retained in Google Cloud Logging per our retention policy for
-              audit and compliance purposes.
-            </p>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                <strong className="text-white">Patient/clinical data</strong>:
+                Not retained. Discarded immediately after processing.
+              </li>
+              <li>
+                <strong className="text-white">Audio recordings</strong>: Not
+                retained. Cleared from browser memory after each request.
+              </li>
+              <li>
+                <strong className="text-white">Configuration data</strong>:
+                Stored locally in your browser until you uninstall the Extension
+                or clear it manually.
+              </li>
+              <li>
+                <strong className="text-white">Operational logs</strong>:
+                Retained in Google Cloud Logging per our retention policy (no
+                PHI) for audit and compliance purposes.
+              </li>
+            </ul>
           </Section>
 
           <Section title="Your Rights">
+            <p className="mb-3">
+              You have the following rights regarding your data:
+            </p>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                <strong className="text-white">Access</strong> &mdash; you may
+                request details about what data we process and how
+              </li>
+              <li>
+                <strong className="text-white">Deletion</strong> &mdash; you
+                may request deletion of any data associated with your
+                organization. Locally stored configuration can be cleared by
+                uninstalling the Extension or using Chrome&apos;s &ldquo;Clear
+                storage&rdquo; option for the Extension.
+              </li>
+              <li>
+                <strong className="text-white">Opt-out</strong> &mdash; you may
+                stop using the Extension at any time by disabling or
+                uninstalling it. No data is collected when the Extension is not
+                actively in use.
+              </li>
+              <li>
+                <strong className="text-white">Portability</strong> &mdash;
+                since we do not retain patient data, there is no stored data to
+                export. We can provide operational log data associated with your
+                organization upon request.
+              </li>
+            </ul>
+            <p className="mt-3">
+              To exercise any of these rights, contact us at the address below.
+              We will respond to all requests within 30 days.
+            </p>
+          </Section>
+
+          <Section title="Children&rsquo;s Privacy">
             <p>
-              If you have questions about how your data is handled or wish to
-              exercise any rights regarding your information, contact us at the
-              address below.
+              SightFlow is designed for use by licensed healthcare professionals
+              in clinical settings. It is not intended for use by children under
+              13, and we do not knowingly collect data from children.
             </p>
           </Section>
 
@@ -260,7 +457,8 @@ export default function SightFlowPrivacy() {
             <p>
               We may update this policy from time to time. The &ldquo;Last
               Updated&rdquo; date at the top of this page reflects the most
-              recent revision.
+              recent revision. If we make material changes, we will notify users
+              through the Extension or by email.
             </p>
           </Section>
 
