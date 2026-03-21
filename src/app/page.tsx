@@ -161,10 +161,12 @@ export default function Home() {
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white">SightFlow</h3>
                   <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                    EMR-native structured AI automation for ophthalmology. Integrates
-                    directly into Nextech to capture patient encounters and generate
-                    structured clinical documentation, replacing manual scribing with
-                    intelligent, workflow-aligned automation.
+                    AI-powered scribe that integrates directly into the Nextech
+                    EMR. Clinicians dictate encounters naturally; the system
+                    transcribes, structures, and auto-populates the entire
+                    chart — from exam findings to diagnoses to plan. Currently
+                    used by multiple ophthalmologists and optometrists across
+                    several clinics.
                   </p>
                   <div className="mt-auto flex items-center gap-4">
                     <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
@@ -286,7 +288,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
+          <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
             {/* LensPicker Card */}
             <div className="glass card-glow-emerald group relative overflow-hidden rounded-2xl transition-all">
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
@@ -319,6 +321,37 @@ export default function Home() {
                   .
                 </p>
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400">
+                  Details coming soon
+                </span>
+              </div>
+            </div>
+
+            {/* Visari Card */}
+            <div className="glass card-glow-indigo group relative overflow-hidden rounded-2xl transition-all">
+              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-indigo-950/40 to-gray-900/40 p-6">
+                <Image
+                  src="/visari-preview.png"
+                  alt="Visari logo"
+                  width={160}
+                  height={160}
+                  className="object-contain drop-shadow-lg"
+                />
+              </div>
+              <div className="p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-400">
+                    Coming Soon
+                  </span>
+                </div>
+                <h3 className="mb-2 text-xl font-bold text-white">Visari</h3>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  The AI-native clinical operating system for eye care. A
+                  voice-first, image-native platform that replaces fragmented
+                  EMR workflows with a fluid, AI-guided interface — helping
+                  physicians document, review imaging, and navigate encounters
+                  without touching a keyboard.
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400">
                   Details coming soon
                 </span>
               </div>

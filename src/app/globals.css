@@ -102,6 +102,16 @@ body {
   transform: translateY(-2px);
 }
 
+/* Indigo glow variant for Visari card */
+.card-glow-indigo {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-glow-indigo:hover {
+  box-shadow: 0 0 40px -8px rgba(99, 102, 241, 0.25);
+  transform: translateY(-2px);
+}
+
 /* Iris card glow */
 .iris-glow {
   box-shadow: 0 0 60px -12px rgba(139, 92, 246, 0.2);
