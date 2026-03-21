@@ -290,7 +290,7 @@ export default function Home() {
 
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
             {/* LensPicker Card */}
-            <div className="glass card-glow-emerald group relative overflow-hidden rounded-2xl transition-all">
+            <a href="https://lenspicker-94359230111.us-central1.run.app/about" target="_blank" rel="noopener noreferrer" className="glass card-glow-emerald group relative overflow-hidden rounded-2xl transition-all">
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
                 <svg className="h-20 w-20 text-emerald-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
@@ -310,21 +310,21 @@ export default function Home() {
                   consultation, then surfaces AI-driven recommendations so
                   surgeons and patients can make more informed IOL decisions
                   together. Co-developing with{" "}
-                  <a
-                    href="https://www.linkedin.com/in/garywortz/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-emerald-400 underline underline-offset-2 hover:text-emerald-300"
+                  <span
+                    className="text-emerald-400 underline underline-offset-2 group-hover:text-emerald-300"
                   >
                     Gary Wortz, MD
-                  </a>
+                  </span>
                   .
                 </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400">
-                  Details coming soon
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400 transition-colors group-hover:text-emerald-300">
+                  Learn more
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
                 </span>
               </div>
-            </div>
+            </a>
 
             {/* Visari Card */}
             <div className="glass card-glow-indigo group relative overflow-hidden rounded-2xl transition-all">
