@@ -322,7 +322,7 @@ export default function Home() {
             </div>
 
             {/* LensPicker Card */}
-            <a href="https://lenspicker-94359230111.us-central1.run.app/about" target="_blank" rel="noopener noreferrer" className="glass card-glow-emerald group relative overflow-hidden rounded-2xl transition-all">
+            <div className="glass card-glow-emerald group relative overflow-hidden rounded-2xl transition-all">
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
                 <svg className="h-20 w-20 text-emerald-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
@@ -342,21 +342,29 @@ export default function Home() {
                   consultation, then surfaces AI-driven recommendations so
                   surgeons and patients can make more informed IOL decisions
                   together. Co-developing with{" "}
-                  <span
-                    className="text-emerald-400 underline underline-offset-2 group-hover:text-emerald-300"
+                  <a
+                    href="https://www.linkedin.com/in/garywortz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-400 underline underline-offset-2 hover:text-emerald-300"
                   >
                     Gary Wortz, MD
-                  </span>
+                  </a>
                   .
                 </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400 transition-colors group-hover:text-emerald-300">
+                <a
+                  href="https://lenspicker-94359230111.us-central1.run.app/about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400 transition-colors hover:text-emerald-300"
+                >
                   Learn more
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                   </svg>
-                </span>
+                </a>
               </div>
-            </a>
+            </div>
 
             {/* Outbound Call Agent Card */}
             <div className="glass card-glow-rose group relative overflow-hidden rounded-2xl transition-all">
@@ -427,16 +435,19 @@ export default function Home() {
                 Hi, I&apos;m Iris!
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-gray-400">
-                I&apos;m Dr. De Rojas&apos;s AI assistant, a fully autonomous
-                system he built and maintains, running 24/7 on secure cloud
-                infrastructure. I handle his email, calendar, research, and
-                professional communications in real time.
-              </p>
-              <p className="mb-4 text-sm leading-relaxed text-gray-400">
-                This isn&apos;t a chatbot demo. It&apos;s production AI
-                infrastructure: multi-model pipelines, real-time webhooks,
-                automated workflows, and hardened security. Built by a surgeon
-                who ships code.
+                I&apos;m Dr. De Rojas&apos;s personal AI assistant, built
+                on{" "}
+                <a
+                  href="https://github.com/nichochar/open-claw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-violet-400 underline underline-offset-2 hover:text-violet-300"
+                >
+                  OpenClaw
+                </a>
+                {" "}and running 24/7 on secure cloud infrastructure. I help
+                manage his email, calendar, research, and professional
+                communications across multiple channels.
               </p>
               <p className="mb-6 text-sm leading-relaxed text-gray-400">
                 Dr. De Rojas is always looking to collaborate with health tech
@@ -445,7 +456,7 @@ export default function Home() {
                 organization, or have an idea worth pursuing. The best way to
                 get in touch is to email{" "}
                 <span className="font-medium text-white">iris@derojas.ai</span>
-                {" "}and Iris will make sure it gets to the right place.
+                {" "}and I&apos;ll make sure it gets to the right place.
               </p>
               <a
                 href="mailto:iris@derojas.ai"
