@@ -289,6 +289,38 @@ export default function Home() {
           </div>
 
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+            {/* Visari Card */}
+            <div className="glass card-glow-indigo group relative overflow-hidden rounded-2xl transition-all">
+              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-indigo-950/40 to-gray-900/40 p-6">
+                <Image
+                  src="/visari-preview.png"
+                  alt="Visari logo"
+                  width={160}
+                  height={160}
+                  className="object-contain drop-shadow-lg"
+                />
+              </div>
+              <div className="p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-400">
+                    Coming Soon
+                  </span>
+                </div>
+                <h3 className="mb-2 text-xl font-bold text-white">Visari</h3>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  The AI-native clinical operating system for eye care. Legacy
+                  EMRs force physicians to adapt to software — Visari flips
+                  that. Built around natural language, multimodal imaging, and
+                  a fluid interface that adapts to the physician, replacing
+                  the most painful parts of the EMR: documentation, chart
+                  navigation, image review, and coding.
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400">
+                  Details coming soon
+                </span>
+              </div>
+            </div>
+
             {/* LensPicker Card */}
             <a href="https://lenspicker-94359230111.us-central1.run.app/about" target="_blank" rel="noopener noreferrer" className="glass card-glow-emerald group relative overflow-hidden rounded-2xl transition-all">
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
@@ -325,37 +357,6 @@ export default function Home() {
                 </span>
               </div>
             </a>
-
-            {/* Visari Card */}
-            <div className="glass card-glow-indigo group relative overflow-hidden rounded-2xl transition-all">
-              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-indigo-950/40 to-gray-900/40 p-6">
-                <Image
-                  src="/visari-preview.png"
-                  alt="Visari logo"
-                  width={160}
-                  height={160}
-                  className="object-contain drop-shadow-lg"
-                />
-              </div>
-              <div className="p-8">
-                <div className="mb-4 flex items-center gap-3">
-                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-400">
-                    Coming Soon
-                  </span>
-                </div>
-                <h3 className="mb-2 text-xl font-bold text-white">Visari</h3>
-                <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                  The AI-native clinical operating system for eye care. A
-                  voice-first, image-native platform that replaces fragmented
-                  EMR workflows with a fluid, AI-guided interface — helping
-                  physicians document, review imaging, and navigate encounters
-                  without touching a keyboard.
-                </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400">
-                  Details coming soon
-                </span>
-              </div>
-            </div>
 
             {/* Outbound Call Agent Card */}
             <div className="glass card-glow-rose group relative overflow-hidden rounded-2xl transition-all">
