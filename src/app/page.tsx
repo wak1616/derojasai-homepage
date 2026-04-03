@@ -422,7 +422,7 @@ export default function Home() {
             <div className="absolute -top-12 left-1/2 -translate-x-1/2">
               <div className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-violet-500/30 shadow-lg shadow-violet-500/20">
                 <Image
-                  src="/iris-avatar.png"
+                  src="/iris-avatar.jpg"
                   alt="Iris, AI Assistant"
                   fill
                   className="object-cover object-[65%_0%] scale-130"
