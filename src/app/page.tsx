@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import VideoModal from "./video-modal";
 
 function ArrowIcon() {
@@ -50,9 +49,9 @@ export default function Home() {
       {/* Header */}
       <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-gray-950/60 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-          <Link href="/" className="text-lg font-bold tracking-tight text-white">
+          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-lg font-bold tracking-tight text-white cursor-pointer">
             derojas<span className="text-cyan-400">.ai</span>
-          </Link>
+          </a>
           <nav className="flex items-center gap-6 text-sm text-gray-400">
             <a href="#projects" className="transition-colors hover:text-white">
               Projects
