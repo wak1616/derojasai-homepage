@@ -425,7 +425,7 @@ export default function Home() {
                   src="/iris-avatar.jpg"
                   alt="Iris, AI Assistant"
                   fill
-                  className="object-cover object-[65%_0%] scale-130"
+                  className="object-cover object-top scale-110"
                 />
               </div>
             </div>
@@ -435,28 +435,16 @@ export default function Home() {
                 Hi, I&apos;m Iris!
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-gray-400">
-                I&apos;m Dr. De Rojas&apos;s personal AI assistant, built
-                on{" "}
-                <a
-                  href="https://github.com/nichochar/open-claw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-violet-400 underline underline-offset-2 hover:text-violet-300"
-                >
-                  OpenClaw
-                </a>
-                {" "}and running 24/7 on secure cloud infrastructure. I help
-                manage his email, calendar, research, and professional
-                communications across multiple channels.
+                I&apos;m Dr. De Rojas&apos;s personal AI assistant, running
+                24/7 on secure cloud infrastructure. I help manage his email,
+                calendar, research, and professional communications across
+                multiple channels.
               </p>
               <p className="mb-6 text-sm leading-relaxed text-gray-400">
                 Dr. De Rojas is always looking to collaborate with health tech
                 developers on new and existing projects, whether you&apos;re
                 building in healthcare AI, exploring automation for your
-                organization, or have an idea worth pursuing. The best way to
-                get in touch is to email{" "}
-                <span className="font-medium text-white">iris@derojas.ai</span>
-                {" "}and I&apos;ll make sure it gets to the right place.
+                organization, or have an idea worth pursuing.
               </p>
               <a
                 href="mailto:iris@derojas.ai"
