@@ -41,7 +41,7 @@ function MailIcon() {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
+    <div id="top" className="relative min-h-screen">
       {/* Background layers */}
       <div className="hero-gradient fixed inset-0 -z-10" />
       <div className="dot-grid fixed inset-0 -z-10 opacity-40" />
@@ -49,7 +49,7 @@ export default function Home() {
       {/* Header */}
       <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-gray-950/60 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-lg font-bold tracking-tight text-white cursor-pointer">
+          <a href="#top" className="text-lg font-bold tracking-tight text-white cursor-pointer">
             derojas<span className="text-cyan-400">.ai</span>
           </a>
           <nav className="flex items-center gap-6 text-sm text-gray-400">
