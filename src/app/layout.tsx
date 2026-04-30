@@ -8,6 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://derojas.ai"),
   title: "derojas.ai | AI-Driven Innovation in Ophthalmology",
   description:
     "Dr. Joaquin De Rojas builds AI tools for ophthalmology and healthcare. Explore AI Calc, SightFlow, and meet Iris, his AI assistant.",
@@ -18,6 +19,21 @@ export const metadata: Metadata = {
     url: "https://derojas.ai",
     siteName: "derojas.ai",
     type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1363,
+        height: 1363,
+        alt: "derojas.ai logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "derojas.ai | AI-Driven Innovation in Ophthalmology",
+    description:
+      "Dr. Joaquin De Rojas builds AI tools for ophthalmology and healthcare.",
+    images: ["/logo.png"],
   },
 };
 
