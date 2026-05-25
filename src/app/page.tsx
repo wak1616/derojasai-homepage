@@ -320,7 +320,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* LensPicker Card */}
+            {/* MDConsult Card */}
             <div className="glass card-glow-emerald group relative overflow-hidden rounded-2xl transition-all">
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
                 <svg className="h-20 w-20 text-emerald-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
@@ -334,7 +334,7 @@ export default function Home() {
                     Coming Soon
                   </span>
                 </div>
-                <h3 className="mb-2 text-xl font-bold text-white">LensPicker</h3>
+                <h3 className="mb-2 text-xl font-bold text-white">MDConsult</h3>
                 <p className="mb-6 text-sm leading-relaxed text-gray-400">
                   A streamlined lens selection platform for cataract surgery.
                   Sends personalized lifestyle surveys to patients before their
@@ -352,7 +352,7 @@ export default function Home() {
                   .
                 </p>
                 <a
-                  href="https://lenspicker-94359230111.us-central1.run.app/about"
+                  href="https://mdconsult.ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400 transition-colors hover:text-emerald-300"
