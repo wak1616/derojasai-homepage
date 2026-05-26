@@ -154,8 +154,8 @@ export default function Home() {
                 </div>
                 <div className="flex flex-1 flex-col p-8">
                   <div className="mb-4 flex items-center gap-3">
-                    <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
-                      Pilot
+                    <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
+                      Live
                     </span>
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white">SightFlow</h3>
@@ -275,10 +275,13 @@ export default function Home() {
             {/* MDConsult Card */}
             <div className="glass card-glow-emerald group relative flex flex-col overflow-hidden rounded-2xl transition-all">
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
-                <svg className="h-20 w-20 text-emerald-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+                <Image
+                  src="/mdconsult-logo.svg"
+                  alt="MDConsult"
+                  width={240}
+                  height={30}
+                  className="object-contain drop-shadow-lg"
+                />
               </div>
               <div className="flex flex-1 flex-col p-8">
                 <div className="mb-4 flex items-center gap-3">
