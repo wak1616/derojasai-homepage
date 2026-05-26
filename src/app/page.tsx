@@ -409,7 +409,7 @@ export default function Home() {
       <section id="iris" className="relative py-32 px-6">
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-16">
-            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-violet-400">
+            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-emerald-400">
               Collaborate
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -420,7 +420,7 @@ export default function Home() {
           <div className="glass iris-glow relative mx-auto max-w-xl rounded-3xl p-10 pt-20 transition-all">
             {/* Iris avatar */}
             <div className="absolute -top-12 left-1/2 -translate-x-1/2">
-              <div className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-violet-500/30 shadow-lg shadow-violet-500/20">
+              <div className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-emerald-500/30 shadow-lg shadow-emerald-500/20">
                 <Image
                   src="/iris-avatar.jpg"
                   alt="Iris, AI Assistant"
@@ -448,7 +448,7 @@ export default function Home() {
               </p>
               <a
                 href="mailto:iris@derojas.ai"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
               >
                 <MailIcon />
                 iris@derojas.ai
