@@ -275,7 +275,8 @@ export default function Home() {
             {/* MDConsult Card */}
             <div className="glass card-glow-emerald group relative flex flex-col overflow-hidden rounded-2xl transition-all">
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src="/mdconsult-logo.svg"
                   alt="MDConsult"
                   width={240}
