@@ -271,6 +271,48 @@ export default function Home() {
                 </span>
               </div>
             </a>
+
+            {/* MDConsult Card */}
+            <div className="glass card-glow-emerald group relative flex flex-col overflow-hidden rounded-2xl transition-all">
+              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
+                <svg className="h-20 w-20 text-emerald-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div className="flex flex-1 flex-col p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
+                    Live
+                  </span>
+                </div>
+                <h3 className="mb-2 text-xl font-bold text-white">MDConsult</h3>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  A streamlined lens selection platform for cataract surgery.
+                  Sends personalized lifestyle surveys to patients before their
+                  consultation, then surfaces AI-driven recommendations so
+                  surgeons and patients can make more informed IOL decisions
+                  together. Co-developed with{" "}
+                  <a
+                    href="https://www.linkedin.com/in/garywortz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-400 underline underline-offset-2 hover:text-emerald-300"
+                  >
+                    Gary Wortz, MD
+                  </a>
+                  .
+                </p>
+                <a
+                  href="https://mdconsult.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-emerald-400 transition-colors hover:text-emerald-300"
+                >
+                  Open app <ArrowIcon />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -287,7 +329,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+          <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
             {/* Visari Card */}
             <div className="glass card-glow-indigo group relative overflow-hidden rounded-2xl transition-all">
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-indigo-950/40 to-gray-900/40 p-6">
@@ -317,51 +359,6 @@ export default function Home() {
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400">
                   Details coming soon
                 </span>
-              </div>
-            </div>
-
-            {/* MDConsult Card */}
-            <div className="glass card-glow-emerald group relative overflow-hidden rounded-2xl transition-all">
-              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-emerald-950/40 to-gray-900/40 p-6">
-                <svg className="h-20 w-20 text-emerald-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <div className="p-8">
-                <div className="mb-4 flex items-center gap-3">
-                  <span className="rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
-                    Coming Soon
-                  </span>
-                </div>
-                <h3 className="mb-2 text-xl font-bold text-white">MDConsult</h3>
-                <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                  A streamlined lens selection platform for cataract surgery.
-                  Sends personalized lifestyle surveys to patients before their
-                  consultation, then surfaces AI-driven recommendations so
-                  surgeons and patients can make more informed IOL decisions
-                  together. Co-developing with{" "}
-                  <a
-                    href="https://www.linkedin.com/in/garywortz/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-emerald-400 underline underline-offset-2 hover:text-emerald-300"
-                  >
-                    Gary Wortz, MD
-                  </a>
-                  .
-                </p>
-                <a
-                  href="https://mdconsult.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-emerald-400 transition-colors hover:text-emerald-300"
-                >
-                  Learn more
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                  </svg>
-                </a>
               </div>
             </div>
 
