@@ -56,6 +56,9 @@ export default function Home() {
             <a href="#projects" className="transition-colors hover:text-white">
               Projects
             </a>
+            <a href="#founder" className="transition-colors hover:text-white">
+              Founder
+            </a>
             <a href="#iris" className="transition-colors hover:text-white">
               Connect
             </a>
@@ -81,41 +84,43 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-16 text-center">
-        <div className="animate-fade-in-up max-w-3xl">
-          <div className="mb-6">
-            <div className="relative mx-auto h-32 w-32 overflow-hidden rounded-full border-2 border-cyan-500/30 shadow-lg shadow-cyan-500/20">
+        <div className="max-w-3xl">
+          {/* Iris brand mark */}
+          <div className="animate-logo-pop relative mb-8 flex justify-center">
+            <div className="animate-glow-pulse pointer-events-none absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/25 blur-3xl sm:h-64 sm:w-64" />
+            <div className="animate-float relative">
               <Image
-                src="/headshot.png"
-                alt="Dr. Joaquin De Rojas"
-                width={128}
-                height={128}
-                className="h-full w-full object-cover"
+                src="/logo-mark.png"
+                alt="derojas.ai"
+                width={224}
+                height={224}
                 priority
+                className="h-44 w-44 drop-shadow-[0_0_45px_rgba(6,182,212,0.55)] sm:h-52 sm:w-52"
               />
             </div>
           </div>
-          <h1 className="mb-4 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Dr. Joaquin De Rojas
+          <h1 className="animate-fade-in-up mb-4 text-5xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+            derojas<span className="text-cyan-400">.ai</span>
           </h1>
-          <p className="mb-6 text-sm font-medium uppercase tracking-widest text-cyan-400">
-            Ophthalmologist &middot; Medical Director &middot; Builder of AI for Clinical Augmentation and Automation
+          <p className="animate-fade-in-up animate-delay-100 mb-6 text-sm font-medium uppercase tracking-widest text-cyan-400">
+            Healthcare &amp; Ophthalmology AI
           </p>
-          <p className="animate-fade-in-up animate-delay-100 mx-auto max-w-xl text-lg leading-relaxed text-gray-400">
-            Building modern, AI-first infrastructure for healthcare and ophthalmology: tools that augment clinicians, streamline workflows, and ultimately serve patients.
+          <p className="animate-fade-in-up animate-delay-200 mx-auto max-w-xl text-lg leading-relaxed text-gray-400">
+            We build modern, AI-first infrastructure for healthcare and ophthalmology: tools that augment clinicians, streamline workflows, and ultimately serve patients.
           </p>
-          <div className="animate-fade-in-up animate-delay-200 mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="animate-fade-in-up animate-delay-300 mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
               href="#projects"
               className="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-gray-950 transition-colors hover:bg-cyan-400"
             >
-              View Projects
+              Explore our work
               <ArrowIcon />
             </a>
             <a
               href="#iris"
               className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-gray-200 transition-colors hover:border-white/20 hover:text-white"
             >
-              Meet Iris
+              Partner with us
             </a>
           </div>
         </div>
@@ -314,6 +319,68 @@ export default function Home() {
                   className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-emerald-400 transition-colors hover:text-emerald-300"
                 >
                   Open app <ArrowIcon />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder */}
+      <section id="founder" className="relative py-32 px-6">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-16 text-center">
+            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-cyan-400">
+              Founder
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Who&apos;s behind derojas.ai
+            </h2>
+          </div>
+
+          <div className="glass card-glow mx-auto flex max-w-3xl flex-col items-center gap-8 rounded-3xl p-8 sm:flex-row sm:items-start sm:gap-10 sm:p-10">
+            <div className="shrink-0">
+              <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-cyan-500/20 shadow-lg shadow-cyan-500/10">
+                <Image
+                  src="/headshot.png"
+                  alt="Dr. Joaquin De Rojas"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="text-center sm:text-left">
+              <h3 className="text-2xl font-bold text-white">
+                Dr. Joaquin De Rojas
+              </h3>
+              <p className="mb-4 mt-1 text-sm font-medium uppercase tracking-wider text-cyan-400">
+                Ophthalmologist &middot; Medical Director &middot; Builder
+              </p>
+              <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                derojas.ai is led by Dr. Joaquin De Rojas, a practicing
+                ophthalmic surgeon and Medical Director who builds the tools he
+                wishes he had in clinic. He works at the intersection of the exam
+                lane and the codebase, designing AI that earns clinicians&apos;
+                trust because it&apos;s built by one of their own.
+              </p>
+              <div className="flex items-center justify-center gap-3 sm:justify-start">
+                <a
+                  href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-gray-400 transition-colors hover:border-white/20 hover:text-white"
+                >
+                  <LinkedInIcon />
+                </a>
+                <a
+                  href="https://x.com/JdeRojasMD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-gray-400 transition-colors hover:border-white/20 hover:text-white"
+                >
+                  <XIcon />
                 </a>
               </div>
             </div>
