@@ -53,13 +53,13 @@ export default function Home() {
             derojas<span className="text-cyan-400">.ai</span>
           </a>
           <nav className="flex items-center gap-6 text-sm text-gray-400">
-            <a href="#projects" className="transition-colors hover:text-white">
+            <a href="#projects" className="hidden transition-colors hover:text-white sm:inline">
               Projects
             </a>
-            <a href="#founder" className="transition-colors hover:text-white">
+            <a href="#founder" className="hidden transition-colors hover:text-white sm:inline">
               Founder
             </a>
-            <a href="#iris" className="transition-colors hover:text-white">
+            <a href="#iris" className="hidden transition-colors hover:text-white sm:inline">
               Connect
             </a>
             <a
