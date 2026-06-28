@@ -62,22 +62,6 @@ export default function Home() {
             <a href="#iris" className="hidden transition-colors hover:text-white sm:inline">
               Connect
             </a>
-            <a
-              href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-white"
-            >
-              <LinkedInIcon />
-            </a>
-            <a
-              href="https://x.com/JdeRojasMD"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-white"
-            >
-              <XIcon />
-            </a>
           </nav>
         </div>
       </header>
@@ -535,24 +519,6 @@ export default function Home() {
             height={48}
             className="opacity-60"
           />
-          <div className="flex items-center gap-4">
-            <a
-              href="https://www.linkedin.com/in/joaquin-de-rojas-md-598830268"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 transition-colors hover:text-white"
-            >
-              <LinkedInIcon />
-            </a>
-            <a
-              href="https://x.com/JdeRojasMD"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 transition-colors hover:text-white"
-            >
-              <XIcon />
-            </a>
-          </div>
           <p className="text-sm text-gray-500">
             &copy; {new Date().getFullYear()} derojas.ai. All rights reserved.
           </p>
