@@ -74,12 +74,13 @@ export default function Home() {
             <div className="animate-glow-pulse pointer-events-none absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/25 blur-3xl sm:h-64 sm:w-64" />
             <div className="animate-float relative">
               <Image
-                src="/logo-mark.png"
+                src="/logo-mark.svg"
                 alt="derojas.ai"
                 width={224}
                 height={224}
                 priority
-                className="h-44 w-44 drop-shadow-[0_0_45px_rgba(6,182,212,0.55)] sm:h-52 sm:w-52"
+                unoptimized
+                className="h-36 w-36 drop-shadow-[0_0_45px_rgba(6,182,212,0.55)] sm:h-44 sm:w-44"
               />
             </div>
           </div>
@@ -513,11 +514,12 @@ export default function Home() {
       <footer className="border-t border-white/5 py-10 px-6">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6">
           <Image
-            src="/logo.png"
+            src="/logo-mark.svg"
             alt="derojas.ai logo"
             width={48}
             height={48}
-            className="opacity-60"
+            unoptimized
+            className="h-10 w-10 opacity-60"
           />
           <p className="text-sm text-gray-500">
             &copy; {new Date().getFullYear()} derojas.ai. All rights reserved.
