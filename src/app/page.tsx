@@ -31,14 +31,6 @@ function XIcon() {
   );
 }
 
-function MailIcon() {
-  return (
-    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-    </svg>
-  );
-}
-
 export default function Home() {
   return (
     <div id="top" className="relative min-h-screen">
@@ -176,13 +168,15 @@ export default function Home() {
             <VideoModal videoSrc="/pac-guide-demo.mp4">
               <div className="glass card-glow-amber group relative flex h-full flex-col overflow-hidden rounded-2xl transition-all">
                 <div className="flex h-48 flex-col items-center justify-center gap-3 bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
-                  <Image
-                    src="/us-eye-logo.png"
-                    alt="US Eye"
-                    width={140}
-                    height={40}
-                    className="object-contain drop-shadow-lg"
-                  />
+                  <div className="rounded-md bg-white px-4 py-2 drop-shadow-lg">
+                    <Image
+                      src="/us-eye-logo.png"
+                      alt="US Eye"
+                      width={140}
+                      height={40}
+                      className="object-contain"
+                    />
+                  </div>
                   <Image
                     src="/pac-guide-preview.jpg"
                     alt="PAC Guide"
@@ -500,10 +494,14 @@ export default function Home() {
               </p>
               <a
                 href="mailto:iris@derojas.ai"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/20 transition-all hover:shadow-emerald-500/40"
               >
-                <MailIcon />
-                iris@derojas.ai
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+                </span>
+                Message me
+                <ArrowIcon />
               </a>
             </div>
           </div>
