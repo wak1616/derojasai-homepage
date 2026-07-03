@@ -167,8 +167,8 @@ export default function Home() {
             {/* PAC Guide Card */}
             <VideoModal videoSrc="/pac-guide-demo.mp4">
               <div className="glass card-glow-amber group relative flex h-full flex-col overflow-hidden rounded-2xl transition-all">
-                <div className="flex h-48 flex-col items-center justify-center gap-3 bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
-                  <div className="rounded-md bg-white px-4 py-2 drop-shadow-lg">
+                <div className="flex h-48 flex-col items-center justify-center bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
+                  <div className="flex flex-col items-center rounded-lg bg-white px-6 py-3 drop-shadow-lg">
                     <Image
                       src="/us-eye-logo.png"
                       alt="US Eye"
@@ -176,14 +176,14 @@ export default function Home() {
                       height={40}
                       className="object-contain"
                     />
+                    <Image
+                      src="/pac-guide-preview.jpg"
+                      alt="PAC Guide"
+                      width={160}
+                      height={60}
+                      className="object-contain"
+                    />
                   </div>
-                  <Image
-                    src="/pac-guide-preview.jpg"
-                    alt="PAC Guide"
-                    width={160}
-                    height={60}
-                    className="object-contain drop-shadow-lg"
-                  />
                 </div>
                 <div className="flex flex-1 flex-col p-8">
                   <div className="mb-4 flex items-center gap-3">
