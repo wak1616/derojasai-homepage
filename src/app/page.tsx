@@ -66,13 +66,13 @@ export default function Home() {
             <div className="animate-glow-pulse pointer-events-none absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/25 blur-3xl sm:h-64 sm:w-64" />
             <div className="animate-float relative">
               <Image
-                src="/yuri-mckee.jpg"
-                alt="Dr. Yuri McKee"
-                width={335}
-                height={446}
+                src="/logo-mark.svg"
+                alt="derojas.ai"
+                width={224}
+                height={224}
                 priority
                 unoptimized
-                className="h-36 w-36 rounded-full object-cover object-top drop-shadow-[0_0_45px_rgba(6,182,212,0.55)] sm:h-44 sm:w-44"
+                className="h-36 w-36 drop-shadow-[0_0_45px_rgba(6,182,212,0.55)] sm:h-44 sm:w-44"
               />
             </div>
           </div>
