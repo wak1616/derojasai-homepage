@@ -381,7 +381,12 @@ export default function Home() {
 
           <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
             {/* Visari Card */}
-            <div className="glass card-glow-indigo group relative overflow-hidden rounded-2xl transition-all">
+            <a
+              href="https://visari.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass card-glow-indigo group relative block overflow-hidden rounded-2xl transition-all"
+            >
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-indigo-950/40 to-gray-900/40 p-6">
                 <Image
                   src="/visari-preview.png"
@@ -406,11 +411,11 @@ export default function Home() {
                   the most painful parts of the EMR: documentation, chart
                   navigation, image review, and coding.
                 </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400">
-                  Details coming soon
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400 transition-colors group-hover:text-indigo-300">
+                  visari.ai <ArrowIcon />
                 </span>
               </div>
-            </div>
+            </a>
 
             {/* Outbound Call Agent Card */}
             <div className="glass card-glow-rose group relative overflow-hidden rounded-2xl transition-all">
