@@ -143,9 +143,6 @@ export default function Home() {
                   <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-300">
                     In development
                   </span>
-                  <span className="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-gray-300">
-                    Founder &amp; CEO
-                  </span>
                 </div>
                 <h3 className="mb-2 text-2xl font-bold text-white">Visari</h3>
                 <p className="mb-4 text-sm leading-relaxed text-gray-300">
