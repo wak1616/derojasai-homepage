@@ -122,6 +122,51 @@ export default function Home() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* Visari Card (featured) */}
+            <a
+              href="https://visari.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass card-glow-indigo group relative flex flex-col overflow-hidden rounded-2xl transition-all md:col-span-2 lg:flex-row"
+            >
+              <div className="relative h-56 shrink-0 overflow-hidden bg-gradient-to-br from-indigo-950/40 to-gray-900/40 sm:h-64 lg:h-auto lg:w-[55%]">
+                <Image
+                  src="/visari-ari-preview.jpg"
+                  alt="Visari prototype: a fictional patient's chart in Focus Flow, with Ari recommending an OCT before any laser decision"
+                  fill
+                  sizes="(min-width: 1024px) 440px, 100vw"
+                  className="object-cover object-right transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-8">
+                <div className="mb-4 flex flex-wrap items-center gap-3">
+                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-300">
+                    In development
+                  </span>
+                  <span className="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-gray-300">
+                    Founder &amp; CEO
+                  </span>
+                </div>
+                <h3 className="mb-2 text-2xl font-bold text-white">Visari</h3>
+                <p className="mb-4 text-sm leading-relaxed text-gray-300">
+                  The AI-native operating system for eye care, built from the
+                  ground up for the whole practice: clinical care, practice
+                  operations and the revenue cycle, and patient communication,
+                  in one connected platform.
+                </p>
+                <p className="mb-6 text-sm leading-relaxed text-gray-400">
+                  Ari, its AI assistant, works beside every role, preparing
+                  visits, drafting documentation and keeping the next step clear,
+                  while people make the decisions. Screens adapt to each
+                  practitioner. Co-founded with Yuri McKee, MD, starting with
+                  ophthalmology.
+                </p>
+                <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-indigo-300 transition-colors group-hover:text-indigo-200">
+                  visari.ai <ArrowIcon />
+                </span>
+              </div>
+            </a>
+
             {/* SightFlow Card */}
             <VideoModal videoSrc="/sightflow-demo.mp4">
               <div className="glass card-glow group relative flex h-full flex-col overflow-hidden rounded-2xl transition-all">
@@ -333,14 +378,17 @@ export default function Home() {
                 Dr. Joaquin De Rojas
               </h3>
               <p className="mb-4 mt-1 text-sm font-medium uppercase tracking-wider text-cyan-400">
-                Ophthalmologist &middot; Medical Director &middot; Builder
+                Ophthalmic surgeon &middot; Founder, Visari &middot; Builder
               </p>
               <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                derojas.ai is led by Dr. Joaquin De Rojas, a practicing
-                ophthalmic surgeon and Medical Director who builds the tools he
-                wishes he had in clinic. He works at the intersection of the exam
-                lane and the codebase, designing AI that earns clinicians&apos;
-                trust because it&apos;s built by one of their own.
+                derojas.ai is led by Dr. Joaquin De Rojas, an ophthalmic surgeon,
+                AI developer and the founder of Visari. A former medical director
+                of one of the most profitable ophthalmology practices and surgery
+                centers in the United States, with medtech startup experience, he
+                builds the tools he wishes he had in clinic. He works at the
+                intersection of the exam lane and the codebase, designing AI that
+                earns clinicians&apos; trust because it&apos;s built by one of
+                their own.
               </p>
               <div className="flex items-center justify-center gap-3 sm:justify-start">
                 <a
@@ -379,44 +427,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
-            {/* Visari Card */}
-            <a
-              href="https://visari.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass card-glow-indigo group relative block overflow-hidden rounded-2xl transition-all"
-            >
-              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-indigo-950/40 to-gray-900/40 p-6">
-                <Image
-                  src="/visari-preview.png"
-                  alt="Visari logo"
-                  width={160}
-                  height={160}
-                  className="object-contain drop-shadow-lg"
-                />
-              </div>
-              <div className="p-8">
-                <div className="mb-4 flex items-center gap-3">
-                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-400">
-                    Coming Soon
-                  </span>
-                </div>
-                <h3 className="mb-2 text-xl font-bold text-white">Visari</h3>
-                <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                  The AI-native clinical operating system for eye care. Legacy
-                  EMRs force physicians to adapt to software — Visari flips
-                  that. Built around natural language, multimodal imaging, and
-                  a fluid interface that adapts to the physician, replacing
-                  the most painful parts of the EMR: documentation, chart
-                  navigation, image review, and coding.
-                </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400 transition-colors group-hover:text-indigo-300">
-                  visari.ai <ArrowIcon />
-                </span>
-              </div>
-            </a>
-
+          <div className="mx-auto grid max-w-md gap-8">
             {/* Outbound Call Agent Card */}
             <div className="glass card-glow-rose group relative overflow-hidden rounded-2xl transition-all">
               <div className="flex h-48 items-center justify-center bg-gradient-to-br from-rose-950/40 to-gray-900/40 p-6">
@@ -486,8 +497,8 @@ export default function Home() {
                 Hi, I&apos;m Iris!
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-gray-400">
-                I&apos;m Dr. De Rojas&apos;s personal AI assistant, running
-                24/7 on secure cloud infrastructure. I help manage his email,
+                I&apos;m Dr. De Rojas&apos;s personal AI assistant, working
+                around the clock. I help manage his email,
                 calendar, research, and professional communications across
                 multiple channels.
               </p>
