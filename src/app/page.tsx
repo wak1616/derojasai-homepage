@@ -129,13 +129,13 @@ export default function Home() {
               rel="noopener noreferrer"
               className="glass card-glow-indigo group relative flex flex-col overflow-hidden rounded-2xl transition-all md:col-span-2 lg:flex-row"
             >
-              <div className="relative h-56 shrink-0 overflow-hidden bg-gradient-to-br from-indigo-950/40 to-gray-900/40 sm:h-64 lg:h-auto lg:w-[55%]">
+              <div className="visari-blueprint relative flex h-64 shrink-0 items-center justify-center overflow-hidden sm:h-72 lg:h-auto lg:w-[48%]">
                 <Image
-                  src="/visari-ari-preview.jpg"
-                  alt="Visari prototype: a fictional patient's chart in Focus Flow, with Ari recommending an OCT before any laser decision"
-                  fill
-                  sizes="(min-width: 1024px) 440px, 100vw"
-                  className="object-cover object-right transition-transform duration-500 group-hover:scale-[1.02]"
+                  src="/visari-mark-light.png"
+                  alt="The Visari mark: an eye drawn as a technical plan"
+                  width={609}
+                  height={476}
+                  className="relative w-[68%] max-w-[300px] drop-shadow-[0_0_28px_rgba(214,222,255,0.22)] transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               </div>
               <div className="flex flex-1 flex-col p-8">

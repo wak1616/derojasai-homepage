@@ -244,3 +244,14 @@ body {
 .animate-modal-scale {
   animation: modal-scale 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+
+/* Visari card: the eye mark on its blueprint field, as on visari.ai */
+.visari-blueprint {
+  background-color: #0b1118;
+  background-image:
+    radial-gradient(ellipse 60% 60% at 50% 50%, rgba(214, 222, 255, 0.12), transparent 70%),
+    linear-gradient(rgba(214, 222, 255, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214, 222, 255, 0.09) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  background-position: center, center, center;
+}
