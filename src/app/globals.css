@@ -92,16 +92,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Rose glow variant for upcoming cards */
-.card-glow-rose {
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.card-glow-rose:hover {
-  box-shadow: 0 0 40px -8px rgba(244, 63, 94, 0.25);
-  transform: translateY(-2px);
-}
-
 /* Indigo glow variant for Visari card */
 .card-glow-indigo {
   transition: box-shadow 0.3s ease, transform 0.3s ease;

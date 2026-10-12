@@ -406,63 +406,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Upcoming Projects */}
-      <section className="relative py-32 px-6">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-16 text-center">
-            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-emerald-400">
-              In Development
-            </p>
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              What&apos;s next
-            </h2>
-          </div>
-
-          <div className="mx-auto grid max-w-md gap-8">
-            {/* Outbound Call Agent Card */}
-            <div className="glass card-glow-rose group relative overflow-hidden rounded-2xl transition-all">
-              <div className="flex h-48 items-center justify-center bg-gradient-to-br from-rose-950/40 to-gray-900/40 p-6">
-                <svg className="h-20 w-20 text-rose-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                </svg>
-              </div>
-              <div className="p-8">
-                <div className="mb-4 flex items-center gap-3">
-                  <span className="rounded-full bg-rose-500/10 px-3 py-1 text-xs font-medium text-rose-400">
-                    Coming Soon
-                  </span>
-                </div>
-                <h3 className="mb-2 text-xl font-bold text-white">Outbound Call Agent</h3>
-                <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                  An AI-powered voice agent for our ambulatory surgical center
-                  that proactively calls patients before their procedures to
-                  educate them on preoperative instructions, answer questions,
-                  and ensure they&apos;re fully prepared, reducing no-shows and
-                  improving the patient experience. Co-developing with{" "}
-                  <a
-                    href="https://www.raiaai.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-rose-400 underline underline-offset-2 hover:text-rose-300"
-                  >
-                    raia
-                  </a>
-                  .
-                </p>
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-rose-400">
-                  Details coming soon
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Iris Section */}
       <section id="iris" className="relative py-32 px-6">
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-16">
-            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-emerald-400">
+            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-cyan-400">
               Collaborate
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -473,12 +421,12 @@ export default function Home() {
           <div className="glass iris-glow relative mx-auto max-w-xl rounded-3xl p-10 pt-20 transition-all">
             {/* Iris avatar */}
             <div className="absolute -top-12 left-1/2 -translate-x-1/2">
-              <div className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-emerald-500/30 shadow-lg shadow-emerald-500/20">
+              <div className="relative h-24 w-24 overflow-hidden rounded-full border-2 border-cyan-500/30 shadow-lg shadow-cyan-500/20">
                 <Image
                   src="/iris-avatar.jpg"
                   alt="Iris, AI Assistant"
                   fill
-                  className="object-cover object-top scale-110"
+                  className="object-cover object-top scale-110 grayscale"
                 />
               </div>
             </div>
@@ -501,11 +449,11 @@ export default function Home() {
               </p>
               <a
                 href="mailto:iris@derojas.ai"
-                className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/20 transition-all hover:shadow-emerald-500/40"
+                className="group inline-flex items-center gap-2.5 rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-gray-950 shadow-lg shadow-cyan-500/20 transition-all hover:bg-cyan-400 hover:shadow-cyan-500/40"
               >
                 <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gray-950 opacity-50" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-gray-950" />
                 </span>
                 Message me
                 <ArrowIcon />
