@@ -380,8 +380,8 @@ export default function Home() {
               <p className="mb-6 text-sm leading-relaxed text-gray-400">
                 derojas.ai is led by Dr. Joaquin De Rojas, an ophthalmic surgeon,
                 AI developer and the founder of Visari. A former medical director
-                of one of the most profitable ophthalmology practices and surgery
-                centers in the United States, with medtech startup experience, he
+                of one of the most successful eye care practices in the United
+                States, with medtech startup experience, he
                 builds the tools he wishes he had in clinic. He works at the
                 intersection of the exam lane and the codebase, designing AI that
                 earns clinicians&apos; trust because it&apos;s built by one of
