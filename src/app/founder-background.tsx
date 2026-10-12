@@ -45,6 +45,13 @@ const work: {
   code?: string;
 }[] = [
   {
+    year: "2026",
+    title: "Two EDOF intraocular lenses compared, with emphasis on mesopic vision",
+    venue: "Journal of Cataract & Refractive Surgery",
+    href: "https://doi.org/10.1097/j.jcrs.0000000000001876",
+    tag: { label: "First author", tone: "cyan" },
+  },
+  {
     year: "2025",
     title: "A predictive machine learning model for femtosecond arcuate keratotomy",
     venue: "American Society of Cataract and Refractive Surgery annual meeting",
@@ -58,13 +65,6 @@ const work: {
     venue: "Cornea",
     href: "https://doi.org/10.1097/ICO.0000000000003439",
     tag: { label: "LLM evaluation", tone: "cyan" },
-  },
-  {
-    year: "2026",
-    title: "Two EDOF intraocular lenses compared, with emphasis on mesopic vision",
-    venue: "Journal of Cataract & Refractive Surgery",
-    href: "https://doi.org/10.1097/j.jcrs.0000000000001876",
-    tag: { label: "First author", tone: "cyan" },
   },
   {
     year: "2016",
