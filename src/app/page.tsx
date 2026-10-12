@@ -1,5 +1,6 @@
 import Image from "next/image";
 import VideoModal from "./video-modal";
+import FounderBackground from "./founder-background";
 
 function ArrowIcon() {
   return (
@@ -322,16 +323,7 @@ export default function Home() {
                   Sends personalized lifestyle surveys to patients before their
                   consultation, then surfaces AI-driven recommendations so
                   surgeons and patients can make more informed IOL decisions
-                  together. Co-developed with{" "}
-                  <a
-                    href="https://www.linkedin.com/in/garywortz/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-emerald-400 underline underline-offset-2 hover:text-emerald-300"
-                  >
-                    Gary Wortz, MD
-                  </a>
-                  .
+                  together. Co-developed with Gary Wortz, MD.
                 </p>
                 <a
                   href="https://mdconsult.ai"
@@ -375,11 +367,11 @@ export default function Home() {
                 Dr. Joaquin De Rojas
               </h3>
               <p className="mb-4 mt-1 text-sm font-medium uppercase tracking-wider text-cyan-400">
-                Ophthalmic surgeon &middot; Founder, Visari &middot; Builder
+                Ophthalmic surgeon &middot; Co-founder, Visari &middot; Builder
               </p>
               <p className="mb-6 text-sm leading-relaxed text-gray-400">
                 derojas.ai is led by Dr. Joaquin De Rojas, an ophthalmic surgeon,
-                AI developer and the founder of Visari. A former medical director
+                AI developer and a co-founder of Visari. A former medical director
                 of one of the most successful eye care practices in the United
                 States, with medtech startup experience, he
                 builds the tools he wishes he had in clinic. He works at the
@@ -409,6 +401,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <FounderBackground />
         </div>
       </section>
 
