@@ -192,17 +192,17 @@ export default function Home() {
                     used by multiple ophthalmologists and optometrists across
                     several clinics.
                   </p>
-                  <div className="mt-auto flex items-center gap-4">
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-violet-400 transition-colors group-hover:text-violet-300">
+                  <div className="mt-auto flex items-center justify-between gap-4">
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition-colors group-hover:text-cyan-300">
                       View demo <ArrowIcon />
                     </span>
+                    <a
+                      href="/privacy/sightflow"
+                      className="text-xs text-gray-600 transition-colors hover:text-gray-300"
+                    >
+                      Privacy Policy
+                    </a>
                   </div>
-                  <a
-                    href="/privacy/sightflow"
-                    className="mt-3 inline-block text-xs text-gray-600 transition-colors hover:text-violet-400"
-                  >
-                    Privacy Policy
-                  </a>
                 </div>
               </div>
             </VideoModal>
@@ -252,7 +252,7 @@ export default function Home() {
                     </a>
                     .
                   </p>
-                  <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-amber-400 transition-colors group-hover:text-amber-300">
+                  <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition-colors group-hover:text-cyan-300">
                     View demo <ArrowIcon />
                   </span>
                 </div>
@@ -329,7 +329,7 @@ export default function Home() {
                   href="https://mdconsult.ai"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-emerald-400 transition-colors hover:text-emerald-300"
+                  className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-cyan-400 transition-colors hover:text-cyan-300"
                 >
                   Open app <ArrowIcon />
                 </a>
