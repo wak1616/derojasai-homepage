@@ -15,6 +15,11 @@ const training = [
 
 const stats = [
   { value: "14", label: "Peer-reviewed papers" },
+  {
+    value: "80+",
+    label: "Presentations, panels & lectures",
+    note: "50 at national and international meetings",
+  },
   { value: "13", label: "Clinical trials & studies", note: "7 as principal investigator" },
   {
     value: "3",
@@ -149,7 +154,7 @@ export default function FounderBackground() {
                     </span>
                   )}
                 </dt>
-                <dd className="order-first w-12 shrink-0 bg-gradient-to-b from-white to-cyan-300 bg-clip-text text-3xl font-extrabold tabular-nums text-transparent sm:text-4xl">
+                <dd className="order-first w-16 shrink-0 bg-gradient-to-b from-white to-cyan-300 bg-clip-text text-3xl font-extrabold tabular-nums text-transparent sm:text-4xl">
                   {s.value}
                 </dd>
               </div>
