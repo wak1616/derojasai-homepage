@@ -30,6 +30,7 @@ const stats = [
 
 const recognition = [
   "Castle Connolly Top Doctor, every year since 2022",
+  "CEDARS ASPENS Society member, by invitation",
   "U.S. patent holder",
 ];
 
