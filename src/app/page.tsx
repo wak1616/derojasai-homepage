@@ -1,6 +1,9 @@
 import Image from "next/image";
 import VideoModal from "./video-modal";
 import FounderBackground from "./founder-background";
+import VisariBlueprint from "./visari-blueprint";
+import PatientAccessArt from "./patient-access-art";
+import FounderPortrait from "./founder-portrait";
 
 function ArrowIcon() {
   return (
@@ -130,15 +133,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="glass card-glow-indigo group relative flex flex-col overflow-hidden rounded-2xl transition-all md:col-span-2 lg:flex-row"
             >
-              <div className="visari-blueprint relative flex h-64 shrink-0 items-center justify-center overflow-hidden sm:h-72 lg:h-auto lg:w-[48%]">
-                <Image
-                  src="/visari-mark-light.png"
-                  alt="The Visari mark: an eye drawn as a technical plan"
-                  width={609}
-                  height={476}
-                  className="relative w-[68%] max-w-[300px] drop-shadow-[0_0_28px_rgba(214,222,255,0.22)] transition-transform duration-700 group-hover:scale-[1.03]"
-                />
-              </div>
+              <VisariBlueprint />
               <div className="flex flex-1 flex-col p-8">
                 <div className="mb-4 flex flex-wrap items-center gap-3">
                   <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-300">
@@ -168,14 +163,16 @@ export default function Home() {
             {/* SightFlow Card */}
             <VideoModal videoSrc="/sightflow-demo.mp4">
               <div className="glass card-glow group relative flex h-full flex-col overflow-hidden rounded-2xl transition-all">
-                <div className="flex h-48 items-center justify-center bg-gradient-to-br from-violet-950/40 to-gray-900/40 p-6">
-                  <Image
-                    src="/sightflow-preview.png"
-                    alt="SightFlow"
-                    width={160}
-                    height={160}
-                    className="object-contain drop-shadow-lg"
-                  />
+                <div className="project-art project-art-sightflow">
+                  <div className="project-art-tile sightflow-tile">
+                    <Image
+                      src="/sightflow-preview.png"
+                      alt="SightFlow"
+                      width={160}
+                      height={179}
+                      className="h-full w-full object-contain mix-blend-multiply"
+                    />
+                  </div>
                 </div>
                 <div className="flex flex-1 flex-col p-8">
                   <div className="mb-4 flex items-center gap-3">
@@ -210,34 +207,17 @@ export default function Home() {
             {/* PAC Guide Card */}
             <VideoModal videoSrc="/pac-guide-demo.mp4">
               <div className="glass card-glow-amber group relative flex h-full flex-col overflow-hidden rounded-2xl transition-all">
-                <div className="flex h-48 flex-col items-center justify-center bg-gradient-to-br from-amber-950/40 to-gray-900/40 p-6">
-                  <div className="flex flex-col items-center rounded-lg bg-white px-6 py-3 drop-shadow-lg">
-                    <Image
-                      src="/us-eye-logo.png"
-                      alt="US Eye"
-                      width={140}
-                      height={40}
-                      className="object-contain"
-                    />
-                    <Image
-                      src="/pac-guide-preview.jpg"
-                      alt="PAC Guide"
-                      width={160}
-                      height={60}
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
+                <PatientAccessArt />
                 <div className="flex flex-1 flex-col p-8">
                   <div className="mb-4 flex items-center gap-3">
                     <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
                       Live
                     </span>
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-white">PAC Guide</h3>
+                  <h3 className="mb-2 text-xl font-bold text-white">Patient Access Center Guide</h3>
                   <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                    AI-powered knowledge base and agent system for US Eye
-                    Florida&apos;s patient access center (PAC). Helps call center staff
+                    AI-powered knowledge base and agent system for a
+                    patient access center (PAC). Helps call center staff
                     schedule appointments, triage ER calls, verify insurance, and
                     route patients across 50+ providers, using AI agents that
                     answer questions in real time. Initiated by De Rojas and
@@ -353,14 +333,7 @@ export default function Home() {
 
           <div className="glass card-glow mx-auto flex max-w-3xl flex-col items-center gap-8 rounded-3xl p-8 sm:flex-row sm:items-start sm:gap-10 sm:p-10">
             <div className="shrink-0">
-              <div className="relative h-40 w-40 overflow-hidden rounded-2xl border border-cyan-500/20 shadow-lg shadow-cyan-500/10">
-                <Image
-                  src="/headshot.png"
-                  alt="Dr. Joaquin De Rojas"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <FounderPortrait />
             </div>
             <div className="text-center sm:text-left">
               <h3 className="text-2xl font-bold text-white">
